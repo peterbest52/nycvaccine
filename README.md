@@ -10,7 +10,7 @@ You can access the notebook on the *CyberGISX* website:
 ## Instructions
 * You need to specify a buffer distance (e.g., 2 miles) and a target public transit station ID (e.g., 500) to search and identify the COVID-19 vaccines near the station.
 
-* The vaccination clinic data in NYC are provided for you. If you want to replicate the project for another study area, you need to prepare the public transit station data and census tract data for that area. Also, you need to prepare the vaccination clinic data by following one of the two options:
+* The vaccination clinic data in NYC are provided. If you want to replicate the project for another study area, you need to prepare the public transit station data and census tract data for that area. Also, you need to prepare the vaccination clinic data by following one of the two options:
     - Option 1: Use a cleaned clinic data (*.csv*) for that study area.
     - Option 2: Webscrape the vaccination location data and geocode the data for that study area. Please refer to the following notebooks for Option 2.
 
