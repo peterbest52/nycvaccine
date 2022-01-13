@@ -18,7 +18,8 @@ You can access the notebook on the *CyberGISX* website:
 ## Data
 * NYC COVID-19 vaccination clinics: [NYC COVID-19 and Flu Vaccine Finder](https://vaccinefinder.nyc.gov/) as of January 13, 2022.
 * NYC bus stations: [NYC Open Data](https://data.cityofnewyork.us/Transportation/Bus-Stop-Shelters/qafz-7myz).
-* NYC metro stations: [NYC Open Data](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49). 
+* NYC metro stations: [NYC Open Data](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49).
+* NYC census tracts: [NYC Open Data](https://data.cityofnewyork.us/City-Government/2010-Census-Tracts/fxpq-c8ku). 
 
 ## Contact Information
 Please contact Yunhe Cui (yunhe.cui@uconn.edu) for technical support or Peter Chen (peter.chen@uconn.edu) for other questions.
