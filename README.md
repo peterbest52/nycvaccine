@@ -1,5 +1,7 @@
 # NYC COVID-19 Vaccine Finder
 
+![NYC COVID-19 Vaccine Finder](NYCVaccineFinder.jpg)
+
 ## Background
 Vaccination is the primary preventive measure to battle against the COVID-19 pandemic. In New York City (NYC), reaching a vaccination clinic is highly reliant on public transit. This Jupyter notebook helps to locate COVID-19 vaccine resources near a public transit station (metro or bus) in NYC. 
 
