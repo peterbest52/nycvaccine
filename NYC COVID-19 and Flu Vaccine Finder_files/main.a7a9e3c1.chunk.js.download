@@ -1,0 +1,1546 @@
+(this["webpackJsonpnyc-vaccine-finder"]=this["webpackJsonpnyc-vaccine-finder"]||[]).push([[33],{388:function(e,t){function i(e){return Promise.resolve().then((function(){var t=new Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t}))}i.keys=function(){return[]},i.resolve=i,e.exports=i,i.id=388},422:function(e){e.exports=JSON.parse('{"a":""}')},529:function(e,t,i){},531:function(e,t,i){"use strict";i.r(t);var a=i(3),n=i(4),o=i.n(n),c=i(102),r=i.n(c),l=i(91),s=i(73),d=i(56),h=i.n(d);var p=e=>{e&&e instanceof Function&&i.e(230).then(i.bind(null,913)).then((({getCLS:t,getFID:i,getFCP:a,getLCP:n,getTTFB:o})=>{t(e),i(e),a(e),n(e),o(e)}))};const u="name",b={localhost:"dev","dev.nycvaccinefinder.aws.esri-ps.com":"dev","staging.nycvaccinefinder.aws.esri-ps.com":"staging","demo.nycvaccinefinder.aws.esri-ps.com":"demo","vaccinefinder.nyc.gov":"prod"},m={dev:"07b0dca41f3a48de96a50ce675431082",staging:"df778bba614d4977af918f6992909b84",demo:"b99a3e34feda49a799553240964a1998",prod:"b99a3e34feda49a799553240964a1998"},j={type:"cim",data:{type:"CIMSymbolReference",symbol:{type:"CIMPointSymbol",symbolLayers:[{type:"CIMVectorMarker",enable:!0,anchorPoint:{x:0,y:-.5},anchorPointUnits:"Relative",dominantSizeAxis3D:"Y",size:24,billboardMode3D:"FaceNearPlane",frame:{xmin:0,ymin:0,xmax:21,ymax:21},markerGraphics:[{type:"CIMMarkerGraphic",geometry:{rings:[[[17.17,14.33],[16.97,12.96],[16.38,11.37],[12.16,3.98],[11.2,1.94],[10.5,0],[9.8,1.96],[8.84,4.02],[4.61,11.41],[4.02,12.98],[3.83,14.33],[3.96,15.63],[4.34,16.88],[4.95,18.03],[5.78,19.04],[6.8,19.88],[7.95,20.49],[9.2,20.87],[10.5,21],[11.8,20.87],[13.05,20.5],[14.2,19.88],[15.22,19.05],[16.05,18.03],[16.66,16.88],[17.04,15.63],[17.17,14.33]]]},symbol:{type:"CIMPolygonSymbol",symbolLayers:[{type:"CIMSolidStroke",enable:!0,capStyle:"Round",joinStyle:"Round",lineStyle3D:"Strip",miterLimit:10,width:0,color:[110,110,110,255]},{type:"CIMSolidFill",enable:!0,color:[221,54,58,255]}]}}],scaleSymbolsProportionally:!0,respectFrame:!0}]}}},f={type:"cim",data:{type:"CIMSymbolReference",symbol:{type:"CIMPointSymbol",symbolLayers:[{type:"CIMVectorMarker",enable:!0,anchorPoint:{x:0,y:-.5},anchorPointUnits:"Relative",dominantSizeAxis3D:"Y",size:24,billboardMode3D:"FaceNearPlane",frame:{xmin:0,ymin:0,xmax:21,ymax:21},markerGraphics:[{type:"CIMMarkerGraphic",geometry:{rings:[[[17.17,14.33],[16.97,12.96],[16.38,11.37],[12.16,3.98],[11.2,1.94],[10.5,0],[9.8,1.96],[8.84,4.02],[4.61,11.41],[4.02,12.98],[3.83,14.33],[3.96,15.63],[4.34,16.88],[4.95,18.03],[5.78,19.04],[6.8,19.88],[7.95,20.49],[9.2,20.87],[10.5,21],[11.8,20.87],[13.05,20.5],[14.2,19.88],[15.22,19.05],[16.05,18.03],[16.66,16.88],[17.04,15.63],[17.17,14.33]]]},symbol:{type:"CIMPolygonSymbol",symbolLayers:[{type:"CIMSolidStroke",enable:!0,capStyle:"Round",joinStyle:"Round",lineStyle3D:"Strip",miterLimit:10,width:0,color:[251,125,63,255]},{type:"CIMSolidFill",enable:!0,color:[251,125,63,255]}]}}],scaleSymbolsProportionally:!0,respectFrame:!0}]}}},g=({facility:e,focalPoint:t})=>{var i;const a=`${[e.attributes.Address,e.attributes.Address2,e.attributes.Borough,e.attributes.Zipcode].filter(Boolean)}`,n=new URL("https://www.google.com/maps/dir/");return n.searchParams.append("api","1"),n.searchParams.append("destination",a),(null===t||void 0===t||null===(i=t.attributes)||void 0===i?void 0:i.Address)?(n.searchParams.append("origin",t.attributes.Address),n.href):n.href},x=e=>/\S+@\S+\.\S+/.test(e);var y=i(21),v=i(424),O=i(30),w=i(38),C=i(82),k=i(399),S=i(182),P=i(135),I=i(400),A=i(71),F=i(14),T=i(29),$=i(47);var V={...d.CalciteTheme,palette:{...d.CalciteTheme.palette,red:"#bf4b0c",darkRed:"#e8692a",offWhite:"#EFEFEF",colors:{primary:"#0a5796",button:"#1771b7",buttonHover:"#003f7b",buttonSelected:"#81C3de",secondary:"#5075bb",black:"#333333",offBlack:"#666666",white:"#ffffff",offWhite:"#eaeaea",accent1:"#bf4b0c",accent2:"#fff200",accent3:"#fb7d3f",accent3Accessible:"#bf4b0c",success:"#3AA360",successAccessible:"#2E844E",fail:"#C84504"}},global:{borderRadius:"20px",boxShadow:"0 0 0 1px rgba(0,0,0,0.1), rgba(0,0,0,0.15) 0px 0px 16px 0px",padding:Object($.unitCalc)(d.CalciteTheme.baseline,2,"/"),paddingSmall:Object($.unitCalc)(d.CalciteTheme.baseline,3,"/"),margin:Object($.unitCalc)(d.CalciteTheme.baseline,2,"/"),sidebarWidth:"24rem"},borderRadius:"20px"},z=i(401);const D=Object(F.default)(T.CalciteP)`
+  display: flex;
+  line-height: 1.2rem !important;
+  margin: 0;
+  align-items: center;
+
+  > svg {
+    margin-inline-end: ${V.global.margin};
+    display: none;
+  }
+
+  span {
+    margin-inline: 0;
+  }
+`,M=Object(F.default)(T.CalciteH2)`
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600 !important;
+  line-height: 1.55rem !important;
+`,_=F.default.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+
+  ${e=>e.isPopup&&F.css`
+      min-height: 95px;
+    `};
+  ${D} {
+    font-size: 0.8rem;
+  }
+`,L=F.default.div`
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+
+  ${M} {
+    /* display: inline-flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: 600 !important;
+    line-height: 1.55rem !important;
+
+    img {
+      margin-inline-start: 0.25rem;
+    }
+
+    ${e=>e.isPopup&&F.css`
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: ${V.palette.colors.button};
+        cursor: pointer;
+
+        &:hover {
+          color: ${V.palette.colors.buttonHover};
+        }
+      `};
+  }
+
+  mark {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    background-color: inherit;
+    padding: 0;
+    border-radius: inherit;
+    color: ${V.palette.colors.offBlack};
+  }
+`,N=F.default.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  ${e=>e.isPopup&&F.css`
+      width: 100%;
+    `};
+`,Y=F.default.div`
+  display: flex;
+  align-items: flex-start;
+
+  button,
+  a {
+    margin-inline-start: 0.5rem;
+  }
+`,E=F.default.div`
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+
+  a {
+    color: ${V.palette.blue};
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.55rem;
+  }
+
+  span {
+    margin-inline: 1rem;
+  }
+`,R=F.default.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`,W=F.default.span`
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: inherit;
+  padding: 0;
+  border-radius: inherit;
+  color: ${V.palette.colors.offBlack};
+`,H=(F.default.span`
+  color: ${V.palette.colors.accent3Accessible};
+  margin-inline: 0 !important;
+
+  ${e=>e.isPositive&&F.css`
+      color: ${V.palette.colors.successAccessible};
+      font-size: 0.88rem;
+      font-weight: bold;
+    `};
+
+  ${e=>e.isNegative&&F.css`
+      color: ${V.palette.colors.fail};
+      font-size: 0.88rem;
+      font-weight: bold;
+    `};
+`,F.default.div`
+  display: flex;
+  line-height: 1.2rem !important;
+  margin: 0;
+  align-items: self-start;
+
+  ${e=>e.noWrap&&F.css`
+      white-space: nowrap;
+    `};
+
+  > svg {
+    margin-inline-end: ${V.global.margin};
+    display: none;
+  }
+
+  span {
+    margin-inline: 0;
+  }
+
+  ol {
+    line-height: inherit;
+  }
+`),B=(Object(F.default)(T.CalciteP)`
+  font-weight: bold;
+  color: ${V.palette.green};
+
+  ${e=>"NOTAVAILABLE"===e.availability&&F.css`
+      color: ${V.palette.red};
+    `};
+`,Object(F.default)(z.Tooltip)`
+  & {
+    display: inline-block;
+    position: relative;
+  }
+
+  .tooltip-label {
+    display: inline-block;
+    position: relative;
+  }
+
+  .tooltip__overlay {
+    display: block;
+    position: absolute;
+    color: #fff;
+    background: #000000a6;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-weight: 300;
+    z-index: 1;
+    left: -10px;
+  }
+
+  .tooltip__overlay--hidden {
+    display: none;
+  }
+
+  .tooltip__overlay--contained {
+    max-width: 200px;
+  }
+`),G=Object(F.default)(T.CalciteLi)`
+  margin: 0;
+  margin-inline-start: 0;
+  span {
+    margin-inline: 0;
+  }
+`;var J=i(293),Z=i.n(J),U=i(68);var q=({field:e})=>Object(a.jsxs)(G,{children:[Object(a.jsx)(Z.a,{size:16,color:"#288369"}),Object(a.jsx)("span",{children:(e=>"COVID Vaccine Pfizer"===e?"Pfizer (12+)":"COVID Vaccine Moderna"===e?"Moderna (18+)":"COVID Vaccine Johnson"===e?"Johnson & Johnson (18+)":"COVID Vaccine Pfizer-5-11 Years"===e?"Pfizer (5-11)":U[e])(e)})]},e);F.default.div`
+  padding: 0.5rem 1rem;
+  background: ${e=>e.theme.palette.white};
+  margin: 0.5rem 0;
+  border-radius: 6px;
+
+  h5 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  ${e=>e.hasTitle&&F.css`
+      margin-bottom: -1px;
+      padding: 0.25rem 1rem;
+    `};
+`;const Q=Object(F.default)(T.CalciteOl)`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+
+  ${e=>e.paragraphContent&&F.css`
+      padding-inline-start: calc(16px + 0.25rem);
+    `};
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    margin-inline-end: 1.25rem;
+
+    svg {
+      margin-inline-end: 0.25rem;
+      color: #288369;
+    }
+  }
+
+  ${e=>e.stackedContent&&F.css`
+      flex-direction: column;
+
+      li {
+        border-bottom: 1px solid ${e=>e.theme.palette.lightestGray};
+        margin: 0 -1rem;
+        margin-inline-end: 0;
+        padding: 0.3875rem 0 0.3875rem 1rem;
+        width: calc(100% + 1rem);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    `};
+`;Object(F.default)(T.CalciteH3)`
+  display: inline-flex;
+  font-size: 1rem;
+  margin: 0.25rem 0 0 0;
+  line-height: 1;
+  color: ${e=>e.theme.palette.colors.primary};
+
+  svg {
+    margin-inline-end: 0.25rem;
+  }
+`;var X=i(194),K=i.n(X),ee=i(74),te=i.n(ee),ie=i(402),ae=i.n(ie),ne=i(294),oe=i.n(ne),ce=i(215),re=i.n(ce),le=i(403),se=i.n(le),de=i(404),he=i.n(de),pe=i.p+"static/media/wheelchair-move-medium-blue.95391ff0.svg",ue="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAACXBIWXMAACxLAAAsSwGlPZapAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NzUzLCAyMDIxLzAyLzE1LTExOjUyOjEzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA0LTIwVDE0OjIwOjI0LTA3OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wNC0yMFQxNDoyNjoxOS0wNzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMS0wNC0yMFQxNDoyNjoxOS0wNzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyMmQ3NWY3Ni00MzdiLTM4NGItOTJkNS1jMzVjZmUzNjdiOGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjJkNzVmNzYtNDM3Yi0zODRiLTkyZDUtYzM1Y2ZlMzY3YjhmIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MjJkNzVmNzYtNDM3Yi0zODRiLTkyZDUtYzM1Y2ZlMzY3YjhmIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMmQ3NWY3Ni00MzdiLTM4NGItOTJkNS1jMzVjZmUzNjdiOGYiIHN0RXZ0OndoZW49IjIwMjEtMDQtMjBUMTQ6MjA6MjQtMDc6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi4zIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6I2+EUAAABMElEQVQokW3SP0ibURQF8F8+PigoYqdGB0HdLAXFQRAEJyddasgQcClO0qlgLeraDkFcXXQpFBG0FDqY2X+ti900guhSu5QitqVQldgOuUKIufB478I5555778tkX5Q0iAS38R7CKs6QTxqA5/EOvZE/QgeG0ZbWALsCPIlzFPAS71HEd5RrCYUAF7CNZ1hADoN3oFrCCt7iW+Sf4t5HM/7UE0ZCLYufGMA0FmsbTPEg1MdxhGOMoRVf0IR2VPAjxQwmkMdH3KAFb1DCRYg3o5xgNips4Br/8AuvVffxFc9xioEEV9h0Py5xGBY/qC7uIMFDPGlAqKA7LEIPPidYxyt01hHmopci+vAYeymmsIVdrIWNHEZVN3+CfixhJxOfr0113k/xG39jSssxhEyc2/9IhUWx70GrEwAAAABJRU5ErkJggg==";const be=({facility:e,showHours:t,onClose:i,isPopup:n,selectable:o,vaccineTypeFilter:c,onFacilitySelected:r=(()=>{})})=>{var l,s,d,h,p;const u=()=>"COVID"===(null===c||void 0===c?void 0:c.VaccineType),b=(null===e||void 0===e?void 0:e.attributes)||[];if(null===(l=b.AdditionalInfo)||void 0===l?void 0:l.includes("ext")){var m;let e=null===(m=b.AdditionalInfo)||void 0===m?void 0:m.split("ext ");var j=(""+e[0]).replace(/\D/g,"").match(/^(\d{3})(\d{3})(\d{4})$/);let t="("+j[1]+") "+j[2]+"-"+j[3]+","+e[1];b.Phone=t,b.AdditionalInfo=""}let f="< 0.1";(null===e||void 0===e?void 0:e.proximity)&&e.proximity>=.1&&(f=e.proximity.toFixed(1),e.proximity>9.9&&(f=Math.round(e.proximity)));const g=null===e||void 0===e||null===(s=e.services[0])||void 0===s?void 0:s.Vaccine_Restrictions,x="Yes"===(null===e||void 0===e||null===(d=e.services[0])||void 0===d?void 0:d.Intake_WalkIn),y=(null===e||void 0===e||null===(h=e.services[0])||void 0===h?void 0:h.Intake_ApptPreferred)===U.Intake_ApptPreferred,v=(null===b||void 0===b?void 0:b.FacilityName)||null;return Object(a.jsxs)(_,{isPopup:n,children:[Object(a.jsxs)(L,{isPopup:n,children:[Object(a.jsxs)(N,{isPopup:n,children:[Object(a.jsxs)(M,{isPopup:n,onClick:r,children:[o?Object(a.jsx)(T.CalciteA,{href:"/",onClick:e=>(e=>{r(),e.preventDefault()})(e),children:v||Object(a.jsx)(K.a,{width:300,height:24})}):Object(a.jsx)(a.Fragment,{children:v||Object(a.jsx)(K.a,{width:300,height:24})})," ","Yes"===(null===b||void 0===b?void 0:b.ADA_Compliant)&&Object(a.jsx)("img",{className:"tooltip-label",src:ue,alt:"Wheelchair access icon",title:"This site has a physically accessible pathway to the vaccine administration",style:{width:12,height:14}})]}),Object(a.jsxs)(R,{"aria-label":"Facility Type Information",children:[(null===b||void 0===b?void 0:b.FacilityType)&&u()&&Object(a.jsxs)(ae.a,{"aria-label":"Facility Type",children:[b.FacilityType," ","Yes"===b.ADA_Compliant&&n&&Object(a.jsx)(B,{label:e=>Object(a.jsx)("span",{...e.labelAttributes,className:"tooltip-label",children:Object(a.jsx)("img",{src:pe,alt:"",style:{width:14,height:14},"aria-label":"There is a physically accessible pathway to the vaccine administration"})}),overlay:e=>Object(a.jsx)("span",{...e.overlayAttributes,className:e.isHidden?"tooltip__overlay tooltip__overlay--hidden":"tooltip__overlay tooltip__overlay--contained",children:Object(a.jsx)(D,{style:{whiteSpace:"pre-wrap",marginBottom:"0px"},children:"There is a physically accessible pathway to the vaccine administration"})})})]})||null,(null===e||void 0===e?void 0:e.proximity)&&Object(a.jsxs)(W,{children:[f," mi"]})]})]}),i&&Object(a.jsx)(Y,{children:Object(a.jsx)(te.a,{iconButton:!0,icon:Object(a.jsx)(oe.a,{}),onClick:i,"aria-label":"close"})})]}),null!==e?Object(a.jsxs)(E,{children:[Object(a.jsxs)(D,{children:[Object(a.jsx)(se.a,{size:14}),b.Address,b.Address2&&`, ${b.Address2}`,b.Borough&&`, ${b.Borough}`,b.Zipcode&&`, ${b.Zipcode}`]}),(null===b||void 0===b?void 0:b.Phone)&&Object(a.jsxs)(D,{children:[Object(a.jsx)(re.a,{size:12}),Object(a.jsx)(T.CalciteA,{href:`tel:${b.Phone}`,onClick:e=>{e.stopPropagation()},children:(e=>{var t=(""+e).replace(/\D/g,"").match(/^(\d{3})(\d{3})(\d{4})$/);return t?"("+t[1]+") "+t[2]+"-"+t[3]:e.includes(",")?e:null})(b.Phone)})]}),u()&&Object(a.jsxs)(H,{noWrap:!0,children:[Object(a.jsx)(he.a,{size:14}),Object(a.jsx)("span",{children:1===e.services.length?"Vaccine offered:":"Vaccines offered:"}),Object(a.jsx)(Q,{children:e.services.length>0?e.services.map((e=>e.ServiceType.includes(c.VaccineType)?Object(a.jsx)(q,{vaccineTypeFilter:c,field:e.ServiceType},e.OBJECTID):null)):"None"})]}),g&&u()&&Object(a.jsx)(H,{children:Object(a.jsx)("span",{children:null===(p=e.services[0])||void 0===p?void 0:p.Vaccine_Restrictions})}),y&&u()&&Object(a.jsx)(H,{children:Object(a.jsx)("span",{children:"Appointments are encouraged; limited walk-ins accepted"})}),x&&u()&&Object(a.jsx)(H,{children:Object(a.jsx)("span",{children:"Walk-up vaccinations available to all eligible New Yorkers"})}),t&&Object(a.jsx)(T.CalciteP,{children:(()=>{const e=(new Date).getDay();return b[["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][e]]})()})]}):Object(a.jsx)("div",{style:{width:"210px"},children:Object(a.jsx)(K.a,{width:200,count:3})})]})};be.defaultProps={};var me=be;const je=F.default.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  background: ${e=>e.theme.palette.white};
+  box-shadow: ${e=>e.theme.boxShadow};
+
+  ${e=>!e.noPosition&&F.css`
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    `};
+`,fe=Object(F.default)(je)`
+  ${e=>e.hideShadow&&F.css`
+      box-shadow: none;
+    `};
+
+  ${e=>e.isPopup&&F.css`
+      position: relative;
+      padding: 0;
+    `};
+
+  > * {
+    margin-inline-end: 0.5rem;
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+
+  a,
+  a:hover {
+    color: ${e=>e.theme.palette.white};
+  }
+`,ge=Object(F.default)(te.a).attrs((e=>({...e})))`
+  background: ${e=>e.theme.palette.colors.button};
+  border-radius: ${e=>e.theme.global.borderRadius};
+  padding: 0.31rem 0.62rem;
+  color: ${e=>e.theme.palette.white} !important;
+  text-decoration: none;
+  margin: 0;
+
+  :hover {
+    background: ${e=>e.theme.palette.colors.buttonHover};
+  }
+
+  ${e=>e.extraSmall&&F.css`
+      padding-inline-start: 1rem;
+      padding-inline-end: 1rem;
+    `};
+
+  ${e=>e.large&&F.css`
+      width: 36px;
+      height: 36px;
+    `};
+
+  ${e=>e.floating&&F.css`
+      box-shadow: ${e=>e.theme.boxShadow};
+    `};
+
+  ${e=>e.hasMargins&&F.css`
+      padding-inline-start: ${e=>e.theme.global.padding};
+      padding-inline-end: ${e=>e.theme.global.padding};
+
+      > svg {
+        margin-inline-end: ${e=>e.theme.global.margin} !important;
+      }
+    `};
+`,xe=Object(F.default)(te.a)`
+  box-shadow: ${e=>e.theme.global.boxShadow};
+
+  ${e=>e.extraSmall&&F.css`
+      padding-inline: 1.55rem;
+      line-height: 1;
+    `};
+`,ye=Object(F.default)(te.a).attrs((e=>({clear:!e.active,...e})))`
+  height: 1.8rem;
+  font-size: 0.9rem;
+  color: ${e=>e.theme.palette.colors.white};
+  background-color: ${e=>e.theme.palette.colors.primary};
+  border-color: ${e=>e.theme.palette.colors.white};
+  border-radius: 0;
+  padding-inline-start: ${e=>e.theme.global.padding};
+  padding-inline-end: ${e=>e.theme.global.padding};
+
+  :hover {
+    border-color: ${e=>e.theme.palette.colors.white};
+  }
+
+  ${e=>e.invertSvg&&F.css`
+      img {
+        filter: brightness(0) invert(1);
+      }
+    `};
+
+  ${e=>e.active&&F.css`
+      color: ${e=>e.theme.palette.colors.button};
+      background-color: ${e=>e.theme.palette.colors.white};
+
+      ${e=>e.invertSvg&&F.css`
+          img {
+            filter: none;
+          }
+        `};
+
+      :hover {
+        background: ${e=>e.theme.palette.colors.white};
+        color: ${e=>e.theme.palette.colors.button};
+        opacity: 0.9;
+      }
+    `};
+
+  ${e=>e.outline&&F.css`
+      border-color: ${e=>e.theme.palette.colors.buttonSelected};
+      color: ${e=>e.theme.palette.colors.offBlack};
+    `};
+`;var ve=i(405),Oe=i.n(ve),we=i(186);Object(F.default)(Oe.a)`
+  margin: 0;
+  color: ${e=>e.theme.palette.colors.button};
+  background-color: ${e=>e.theme.palette.colors.buttonSelected};
+  border-color: ${e=>e.theme.palette.colors.button};
+
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.1 6L7.99999 11.1L2.89999 6H13.1Z' fill='%231771B7'/%3E%3C/svg%3E%0A");
+  background-position: 95% 50%;
+
+  ${e=>e.small&&F.css`
+      height: 28px;
+    `};
+
+  + ${we.StyledSideNav} {
+    border-radius: 0;
+  }
+`;var Ce=i(323);const ke=Object(F.default)(ge)`
+  flex-shrink: 0;
+`;F.default.div`
+  margin-inline: -0.5rem;
+
+  > button {
+    margin-block-end: 1rem;
+    margin-inline: 0.5rem;
+    width: calc(50% - 1rem);
+  }
+
+  ${Ce.StyledCopyToClipboard} {
+    margin-inline: 0.5rem;
+  }
+`;var Se=i(408),Pe=i.n(Se),Ie=i.p+"static/media/share.e377b484.svg",Ae=i(409),Fe=i.n(Ae),Te=i(410),$e=i.n(Te),Ve=i(303);const ze=({facility:e})=>{var t;let i=null;i=Ve.isAndroid?Object(a.jsx)($e.a,{size:16}):Ve.isIOS||Ve.isMacOs?Object(a.jsx)(Fe.a,{size:16}):Object(a.jsx)("img",{src:Ie,alt:"share"});const n=`${window.location.href.split("/locations")[0]}/locations/${null===e||void 0===e||null===(t=e.attributes)||void 0===t?void 0:t.OBJECTID}`,o=()=>{navigator.share&&navigator.share({title:document.title,url:n}).then((()=>{console.log("Thanks for sharing!")})).catch(console.error)},c=(null===e||void 0===e?void 0:e.attributes)||[],r="Share "+(null===c||void 0===c?void 0:c.FacilityName)||!1;return navigator.share?Object(a.jsx)(ke,{floating:!0,large:!0,white:!0,icon:i,iconButton:!0,onClick:o,"aria-label":r}):Object(a.jsx)(Pe.a,{copyValue:n,tooltip:"Copy share link to clipboard",children:Object(a.jsx)(ke,{iconButton:!0,floating:!0,large:!0,white:!0,icon:i,"aria-label":"Share"})})};ze.defaultProps={};var De=ze,Me=i(331),_e=i.n(Me);const Le=({facility:e,focalPoint:t,setPopupDirectionsRequest:i,iconOnly:n})=>{const o={};i?o.onClick=()=>i(e):(o.href=g({facility:e,focalPoint:t}),o.target="_blank");const c=(null===e||void 0===e?void 0:e.attributes)||[],r="Direction to "+((null===c||void 0===c?void 0:c.FacilityName)||"")+", "+((null===c||void 0===c?void 0:c.Address)||"");return n?Object(a.jsx)(ge,{...o,"aria-label":r,children:Object(a.jsx)(_e.a,{size:16})}):Object(a.jsx)(ge,{...o,icon:Object(a.jsx)(_e.a,{size:16}),iconPosition:"before",fullWidth:!0,"aria-label":r,children:"Directions"})};Le.defaultProps={iconOnly:!0};var Ne=Le,Ye=i(296),Ee=i.n(Ye);const Re=({children:e,selectedFacility:t,focalPoint:i,hideShadow:n,setPopupDirectionsRequest:o,isPopup:c,...r})=>{var l,s,d;let p=null===t||void 0===t||null===(l=t.attributes)||void 0===l?void 0:l.Website;return p&&x(p)&&(p=`mailto:${p}`),Object(a.jsx)(h.a,{theme:V,children:Object(a.jsxs)(fe,{hideShadow:n,isPopup:c,style:{alignItems:"stretch"},children:[p&&Object(a.jsx)(ge,{href:p,target:"_BLANK",fullWidth:!0,icon:Object(a.jsx)(Ee.a,{size:16}),iconPosition:"before",children:"Schedule appointment"}),(null===t||void 0===t||null===(s=t.attributes)||void 0===s?void 0:s.Phone)&&!p&&Object(a.jsx)(ge,{href:`tel:${t.attributes.Phone}`,icon:Object(a.jsx)(re.a,{size:16}),fullWidth:!0,iconPosition:"before",children:"Call for appointment"}),(null===t||void 0===t||null===(d=t.attributes)||void 0===d?void 0:d.Address)&&Object(a.jsx)(Ne,{facility:t,focalPoint:i,setPopupDirectionsRequest:o,iconOnly:!0}),Object(a.jsx)(De,{selectedFacility:t})]})})};Re.defaultProps={};var We=Re;const He="selected-facility-graphics-layer",Be=async function({mapView:e,facilityId:t}){const i=Qe(e.map),a=Xe(e.map),n={cacheHint:!0,objectIds:[t],outFields:["*"],returnGeometry:!0,outSpatialReference:{wkid:4326}},o=(await i.queryFeatures(n)).features[0],c={where:`LocationID = '${o.attributes.LocationID}'`,cacheHint:!0,outFields:["*"],returnGeometry:!1},r=await a.queryFeatures(c);return o.services=r.features.map((e=>e.attributes)),o},Ge=async function({mapView:e,vaccineTypeFilter:t,attributeFilters:i,focalPoint:a,presetClause:n,mergeClause:o,returnGeometry:c=!0,orderBy:r=[]}){const l=Qe(e.map),s=Xe(e.map),d={where:Ue(t,i),cacheHint:!0,outFields:["*"],returnGeometry:!1},h=await s.queryFeatures(d);let p;p=n&&!o||"Flu"===t.VaccineType?qe(i,h):qe(i,h,n);const u={where:p,cacheHint:!0,outFields:["*"],returnGeometry:!0,orderByFields:r,outSpatialReference:{wkid:4326}},b=await l.queryFeatures(u);return b.features.forEach((e=>{const t=e.attributes.LocationID,i=h.features.filter((e=>e.attributes.LocationID===t));e.services=i.map((e=>e.attributes))})),l.definitionExpression=p,a&&await Je({focalPoint:a,facilities:b.features}),b.features},Je=async function({focalPoint:e,facilities:t}){if(e&&(null===t||void 0===t?void 0:t.length))return t.forEach((t=>{const i=Ze(e,t);t.proximity=i})),void t.sort(((e,t)=>e.proximity-t.proximity))},Ze=(e,t)=>(null===e||void 0===e?void 0:e.geometry)&&(null===t||void 0===t?void 0:t.geometry)?I.geodesicLength(new A.a({paths:[[[e.geometry.longitude,e.geometry.latitude],[t.geometry.longitude,t.geometry.latitude]]],spatialReference:{wkid:4326}}),"miles"):null,Ue=(e,t)=>{let i=[],a=`ServiceType like '%${e.VaccineType}%'`;return t&&Object.keys(t).length?(Object.entries(t).forEach((([e,t])=>{t&&"object"===typeof t&&"ADA_Compliant"!==e?t.length&&i.push(`${t.map((t=>`${e} = '${t}'`)).join(" OR ")}`):t&&"ADA_Compliant"!==e&&i.push(`${e} = '${t}'`)})),i=i.map((e=>`(${e})`)),i.length?a+" AND "+i.join(" AND "):a):a},qe=(e,t,i)=>{let a=`LocationID IN ('${t.features.map((e=>e.attributes.LocationID)).join("','")}')`;return i&&(a+=` AND ${i}`),e.ADA_Compliant?(a+=" AND ADA_Compliant = 'Yes'",a):a},Qe=e=>Ke(e,"Facilities"),Xe=e=>Ke(e,"Services"),Ke=(e,t)=>e.layers.find((e=>e.title===t)),et=async(e,t,i)=>{let{position:a,graphic:n}=e;n?n.geometry=function(e){let t=e.clone();return e.spatialReference.isWebMercator&&(t=Object(w.e)(e)),t}(n.geometry):a&&(n=function(e){const{latitude:t,longitude:i}=e.coords;return new C.a({geometry:new O.a({latitude:t,longitude:i})})}(a),i("Near me")),t(n)},tt=Object(n.createContext)();var it=e=>{const[t,i]=Object(n.useState)(!1),[o,c]=Object(n.useState)({VaccineType:"COVID"}),[l,d]=Object(n.useState)([]),[h,p]=Object(n.useState)(null),[b,m]=Object(n.useState)(null),[j,x]=Object(n.useState)(null),[y,v]=Object(n.useState)([]),[O,w]=Object(n.useState)(u),[C,k]=Object(n.useState)(null),[I,A]=Object(n.useState)(null),[F,T]=Object(n.useState)(null),[$,V]=Object(n.useState)(!1),[z,D]=Object(n.useState)(null),[M,_]=Object(n.useState)(null),[L,N]=Object(n.useState)(null),[Y,E]=Object(n.useState)(null),[R,W]=Object(n.useState)(null),H=Object(s.e)(),B=e=>{(async(e,t,{history:i})=>{i.location.pathname.startsWith("/locations")&&i.push({pathname:e?`/locations/${e.attributes.OBJECTID}`:"/locations"}),t(e)})(e,k,{history:H})},G=e=>{(async(e,t)=>{t(null);let i=await Ge(e);0!==(null===i||void 0===i?void 0:i.length)?t(i):t([])})(e,A)};return Object(n.useEffect)((()=>{(async()=>{if(L&&z){const e=await Be({mapView:L,facilityId:z});j&&(e.proximity=Ze(j,e)),B(e)}})()}),[L,z]),Object(n.useEffect)((()=>{(async()=>{L&&async function({mapView:e,setMapLoaded:t,feature:i,updateSelectedFacility:n,vaccineTypeFilter:o,focalPoint:c,setPopupDirectionsRequest:l}){t(null),e.map.findLayerById(He).graphics.removeAll();const s=Qe(e.map),d=new S.a({creator:function(t){return new Promise(((i,s)=>{Be({mapView:e,facilityId:t.graphic.attributes.OBJECTID}).then((e=>{const t=Object(a.jsxs)(a.Fragment,{children:[Object(a.jsx)(me,{facility:e,isPopup:!0,onFacilitySelected:()=>n(e),vaccineTypeFilter:o}),Object(a.jsx)(We,{selectedFacility:e,focalPoint:c,setPopupDirectionsRequest:l,hideShadow:!0,isPopup:!0})]}),s=document.createElement("div");s.id="facility_popup",r.a.render(t,s),i(s)}),(e=>{console.error(e),s(e)}))}))}}),h=new P.a({content:[d],overwriteActions:!0,actions:[],actionsMenuEnabled:!1,visibleElements:{closeButton:!1,featureNavigation:!1}});if("loaded"===s.loadStatus&&setTimeout((()=>{t(!0)}),3e3),s.popupTemplate=h,e.popup.watch("visible",(function(e,t,i,a){const n=document.getElementById("mapToListToggle");n&&(n.style.visibility=e?"hidden":"visible")})),null===s||void 0===s?void 0:s.labelingInfo){const e=i?`${s.objectIdField} NOT IN (${i.attributes[s.objectIdField]})`:"1=1";s.labelingInfo.forEach(((t,i)=>{const a=t.clone();a.where=e,s.labelingInfo[i]=a})),s.labelingInfo=s.labelingInfo}}({mapView:L,setMapLoaded:W,feature:C,updateSelectedFacility:B,vaccineTypeFilter:o,focalPoint:j,setPopupDirectionsRequest:_})})()}),[L,o,l]),Object(n.useEffect)((()=>{(async()=>{L&&(await async function({mapView:e,features:t}){if(null===t||void 0===t?void 0:t.length)return await e.goTo({target:t,zoom:14})}({mapView:L,features:C?[C]:null}),function({mapView:e,feature:t}){const i=e.map.findLayerById(He);if(i.graphics.removeAll(),t){const e=t.clone();return e.symbol=f,void i.graphics.add(e)}e.popup.close()}({mapView:L,feature:C}))})()}),[L,C]),Object(n.useEffect)((()=>{L&&G({mapView:L,vaccineTypeFilter:o,attributeFilters:l,spatialFilter:b,focalPoint:j})}),[L,o,l,b,j,H]),Object(n.useEffect)((()=>{if(M){console.log("directions requested",M),console.log("focalPoint",j);const e=g({facility:M,focalPoint:j});window.open(e),_(null)}}),[M]),Object(a.jsx)(tt.Provider,{value:{dataReady:t,setDataReady:i,vaccineTypeFilter:o,updateVaccineTypeFilter:e=>{((e,t)=>{t(e)})(e,c)},attributeFilters:l,updateAttributeFilters:e=>{((e,t)=>{t(e)})(e,d)},searchTerm:h,updateSearchTerm:e=>{((e,t)=>{t(e)})(e,p)},spatialFilter:b,updateSpatialFilter:e=>{((e,t)=>{t(e)})(e,m)},focalPoint:j,updateFocalPoint:e=>{et(e,x,p)},attributeSort:y,updateAttributeSort:e=>{((e,t)=>{t(e)})(e,v)},sortBy:O,updateSortBy:e=>{((e,t)=>{t(e)})(e,w)},selectedFacility:C,updateSelectedFacility:B,facilities:I,updateFacilities:G,sortedFacilities:F,updateSortedFacilities:()=>{L&&(async(e,t)=>{let i,a=null;t(a),e.vaccineTypeFilter.VaccineType,i={...e,mergeClause:!0,returnGeometry:!1,orderBy:["FacilityName","Address"]},a=await Ge(i);const n=[],o=[],c=[],r=[],l=[];null!==a&&"COVID"===e.vaccineTypeFilter.VaccineType?(a.forEach((e=>{e.attributes.Website.includes("vax4nyc")?n.push(e):e.attributes.FacilityName.includes("NYC Health + Hospitals")||e.attributes.Website.includes("nychealthandhospitals")?o.push(e):e.attributes.FacilityName.includes("NYS")?c.push(e):"Pharmacy"===e.attributes.FacilityType?r.push(e):l.push(e)})),t([...n,...o,...c,...r,...l])):t(a)})({mapView:L,vaccineTypeFilter:o,attributeFilters:l},T)},filterVisible:$,setFilterVisible:V,preloadedFacilityId:z,setPreloadedFacilityId:D,popupDirectionsRequest:M,setPopupDirectionsRequest:_,mapView:L,updateMapView:async e=>{await(async(e,t)=>{await t(e)})(e,N)},locateWidget:Y,setLocateWidget:E,mapLoaded:R,setMapLoaded:W},children:e.children})},at=i(334),nt=i.n(at),ot=i(335),ct=i(238);const rt=F.default.article`
+  padding: ${e=>e.theme.global.padding};
+  background: ${e=>e.theme.palette.white};
+  box-shadow: 0 0 0 transparent;
+
+  ${e=>e.onClick&&e.selectable&&F.css`
+      &:hover {
+        cursor: pointer;
+        box-shadow: ${e.theme.boxShadow};
+        transition: box-shadow 0.2s ease-in-out;
+      }
+    `};
+`,lt=F.default.article`
+  display: inline-flex;
+  margin-top: 5px;
+
+  > button,
+  > a {
+    margin-inline-end: 0.3rem;
+    padding: 0.3rem 0.75rem;
+    height: 28px;
+  }
+`,st=Object(F.default)(xe)`
+  height: 2.5rem;
+  font-size: 1rem;
+  padding-inline: 1.55rem;
+  line-height: 1;
+  background: ${e=>e.theme.palette.colors.button};
+  border: ${e=>e.theme.palette.colors.button};
+
+  :hover {
+    background: ${e=>e.theme.palette.colors.buttonHover};
+  }
+`;var dt=i(276);const ht=F.default.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: ${e=>e.theme.palette.colors.primary};
+  padding: ${e=>e.theme.global.paddingSmall}
+    ${e=>e.theme.global.padding};
+  box-sizing: border-box;
+  box-shadow: ${e=>e.theme.global.boxShadow};
+  position: relative;
+  z-index: 3 !important;
+
+  ${e=>!e.showFilter&&F.css`
+      visibility: hidden;
+      height: 0;
+      padding 0;
+    `};
+
+  button {
+    margin-inline-end: ${e=>e.theme.global.padding};
+  }
+
+  ${dt.StyledMultiSelectButton} {
+    margin: 0;
+    padding-inline-start: 1rem;
+    background-position: 95% center;
+  }
+
+  @media screen and (max-width: 650px) {
+    & {
+      justify-content: center;
+    }
+
+    button {
+      font-size: 0.8rem;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+`,pt=F.default.button`
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0.755rem;
+  font-size: 0.9rem;
+  line-height: 1.55rem;
+  color: ${e=>e.theme.palette.colors.primary};
+  background-color: ${e=>e.theme.palette.colors.white};
+  border: 0;
+  border-radius: 0;
+  white-space: nowrap;
+  svg {
+    margin-inline-start: 0.25rem;
+  }
+  &:hover {
+    cursor: pointer;
+    background: ${e=>e.theme.palette.colors.offWhite};
+  }
+`,ut=F.default.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  button:last-child {
+    margin-inline-end: 0;
+  }
+`,bt=(F.default.div`
+  display: flex;
+  max-width: 400px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: ${e=>e.theme.global.paddingSmall}
+    ${e=>e.theme.global.padding};
+  z-index: 2;
+`,F.default.div`
+  flex-direction: column;
+`,Object(F.default)(T.CalciteH5)`
+  color: black;
+  margin: 0;
+  padding: 2vh 0 2vh 0;
+`,Object(F.default)(T.CalciteP)`
+  margin: 0;
+  font-size: 13px;
+`);var mt=i(411),jt=i.n(mt);const ft=F.default.section`
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+
+  @media screen and (max-width: 650px) {
+    padding-bottom: 65px;
+  }
+
+  ${rt} {
+    margin-bottom: 0.25rem;
+    box-sizing: border-box;
+  }
+
+  ${st} {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
+  }
+`,gt=F.default.div`
+  background: ${e=>e.theme.palette.offWhite};
+`,xt=F.default.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: ${e=>e.theme.palette.colors.white};
+  text-align: center;
+
+  ${ht} {
+    justify-content: center;
+    box-shadow: none;
+    z-index: 0;
+  }
+`,yt=F.default.header`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.4rem;
+  margin-bottom: 0.8rem;
+  @media screen and (max-width: 650px) {
+    margin: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  img {
+    height: ${e=>Object($.unitCalc)(e.theme.baseline,2,"*")};
+    visibility: hidden;
+    @media screen and (max-width: 650px) {
+      visibility: visible;
+      height: ${e=>Object($.unitCalc)(e.theme.baseline,1.5,"*")};
+    }
+  }
+`,vt=Object(F.default)(T.CalciteH1)`
+  font-size: 1.5rem;
+  color: ${e=>e.theme.palette.colors.primary};
+  margin: 0;
+  margin-top: ${e=>e.theme.global.margin};
+  line-height: inherit;
+  margin-top: 0.4rem;
+  @media screen and (max-width: 650px) {
+    font-size: 1.3rem;
+  }
+`,Ot=Object(F.default)(T.CalciteH2)`
+  font-size: 1.5rem;
+  color: ${e=>e.theme.palette.colors.white};
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: ${e=>e.theme.global.margin};
+  line-height: inherit;
+  @media screen and (max-width: 650px) {
+    font-size: 1.3rem;
+  }
+`,wt=(Object(F.default)(T.CalciteH2)`
+  width: 100%;
+  max-width: 600px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 1rem;
+  color: ${e=>e.theme.palette.colors.primary};
+  line-height: 1.5rem;
+`,Object(F.default)(T.CalciteH3)`
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  color: ${e=>e.theme.palette.colors.primary};
+  line-height: 1.5rem;
+
+  ${e=>e.contained&&F.css`
+      max-width: 600px;
+    `};
+`,Object(F.default)(T.CalciteP)`
+  max-width: 600px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.5rem 1rem;
+  color: ${e=>e.theme.palette.colors.black};
+
+  ${e=>e.noticeText&&F.css`
+      color: ${e=>e.theme.palette.colors.accent1};
+      font-weight: bold;
+    `};
+
+  ${e=>e.noticeTextBanner&&F.css`
+      margin: ${e=>e.theme.global.margin} 0 0;
+      color: ${e=>e.theme.palette.colors.accent2};
+    `};
+`),Ct=(Object(F.default)(jt.a)`
+  font-size: inherit;
+`,F.default.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: ${e=>e.theme.palette.colors.white};
+  background: ${e=>e.theme.palette.colors.primary};
+  padding: ${e=>Object($.unitCalc)(e.theme.baseline,1.5,"/")};
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: ${e=>e.theme.global.boxShadow};
+
+  input {
+    flex: 1;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+  }
+
+  ${ct.StyledButton}, a {
+    flex: 1;
+    max-width: 312px;
+  }
+
+  @media screen and (max-width: 650px) {
+    input {
+      flex: auto;
+      max-width: 100%;
+    }
+  }
+`),kt=(Object(F.default)(T.CalciteH2)`
+  width: 100%;
+  margin: 0;
+  font-size: 1.25rem;
+
+  @media screen and (max-width: 650px) {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+`,Object(F.default)(xe)`
+  border-radius: 0;
+  box-shadow: inherit;
+`),St=F.default.div`
+  box-shadow: ${e=>e.theme.global.boxShadow};
+  display: flex;
+  svg {
+    margin: 0 !important;
+  }
+  @media screen and (max-width: 650px) {
+    width: 80vw;
+    button {
+      padding: 0.32rem 0.9rem;
+    }
+  }
+  @media screen and (min-width: 651px) {
+    width: 25rem;
+  }
+`,Pt=(F.default.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`,F.default.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  ${ot.StyledCard} {
+    max-width: 800px;
+    text-align: start;
+    border-radius: 0;
+    margin: 0.3rem 0 0 0;
+    box-shadow: inherit;
+    border-top: 0;
+
+    &:last-child {
+      margin-bottom: 5rem;
+    }
+
+    ${ot.StyledCardContent} {
+      padding: 0;
+    }
+
+    h4 {
+      margin: 0;
+    }
+  }
+`),It=Object(F.default)(nt.a)`
+  border-radius: 0rem;
+  margin-bottom: 1rem;
+  background-color: #bf4b0c;
+  color: #fff !important;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  z-index: auto;
+  border: none;
+`,At=Object(F.default)(at.AlertMessage)`
+  max-width: 600px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+`;var Ft=i(412),Tt=i.n(Ft),$t=i(423),Vt=i(250);var zt=i(413),Dt=i.n(zt);const Mt=F.default.div`
+  flex: 1;
+  text-align: start;
+  text-align: left;
+  min-height: 32px;
+
+  .esri-search {
+    width: 100%;
+
+    .esri-search__input {
+      font-size: 16px;
+    }
+  }
+
+  .esri-search__suggestions-menu {
+    width: max-content;
+    max-width: 24rem;
+    min-width: 100%;
+    z-index: 5;
+
+    @media screen and (max-width: 650px) {
+      max-width: 100%;
+    }
+  }
+`,_t=Object(F.default)(Dt.a)`
+  width: 100%;
+  height: 32px;
+  font-size: 0.9rem;
+  padding-inline: 8px;
+  pointer-events: none;
+  border: none;
+
+  ::placeholder {
+    color: #ccc;
+  }
+
+  :-ms-input-placeholder {
+    color: #ccc;
+  }
+
+  ::-ms-input-placeholder {
+    color: #ccc;
+  }
+`;var Lt=()=>{const[,e]=Object(n.useState)(!1),[t,i]=Object(n.useState)(null),o=Object(n.useRef)(null),{mapView:c,searchTerm:r,updateSearchTerm:l,updateFocalPoint:d}=Object(n.useContext)(tt),h=Object(s.e)();return Object(n.useEffect)((()=>{!async function(){if(c){const t=await(async({mapView:e,ref:t,searchTerm:i})=>new $t.a({view:e,includeDefaultSources:!1,container:t.current,locationEnabled:!1,popupEnabled:!1,searchTerm:i,sources:[{locator:new Vt.a({url:"https://utility.arcgis.com/usrsvcs/servers/9d812b2197984f1bba2bd565a7f25c10/rest/services/World/GeocodeServer"}),singleLineFieldName:"SingleLine",outFields:["Addr_type"],name:"NYC Locator",placeholder:"Search address or ZIP",resultSymbol:j,zoomScale:72223.819286}]}))({mapView:c,ref:o,searchTerm:r});i(t),t.on("search-complete",(function(e){l(e.searchTerm);const i=e.results[0].results[0].feature;i.attributes.Address=e.results[0].results[0].name,d({graphic:i}),window.searchWidget&&window.searchWidget.id!==t.id&&window.searchWidget.destroy(),window.searchWidget=t,h.push("/locations")})),t.on("search-clear",(function(){l(""),d({})})),e(!0)}}()}),[c]),Object(n.useEffect)((()=>{t&&r&&(t.searchTerm=r)}),[t,r]),Object(a.jsxs)(Mt,{className:"notranslate",content:"notranslate",children:[Object(a.jsx)("span",{ref:o}),!c&&Object(a.jsx)(_t,{placeholder:"Loading locations..."})]})};var Nt=({facility:e,focalPoint:t,showDirections:i=!0})=>{const n=(null===e||void 0===e?void 0:e.attributes)||[];let o=null===n||void 0===n?void 0:n.Website;o&&x(o)&&(o=`mailto:${o}`);const c=(null===n||void 0===n?void 0:n.FacilityName)||"",r=(null===n||void 0===n?void 0:n.Address)||"",l="Schedule appointment at "+c+", "+r,s="Call for appointment at "+c+", "+r;return null!==e?Object(a.jsxs)(lt,{onClick:e=>{e.stopPropagation()},children:[o&&Object(a.jsx)(ge,{icon:Object(a.jsx)(Ee.a,{size:16}),iconPosition:"before",href:o,target:"_blank","aria-label":l,children:"Schedule appointment"}),(null===n||void 0===n?void 0:n.Phone)&&!o&&Object(a.jsx)(ge,{href:`tel:${n.Phone}`,icon:Object(a.jsx)(re.a,{size:16}),fullWidth:!0,iconPosition:"before","aria-label":s,children:"Call for appointment"}),(null===n||void 0===n?void 0:n.Address)&&Object(a.jsx)(Ne,{facility:e,focalPoint:t,iconOnly:!1})]}):Object(a.jsxs)(lt,{children:[Object(a.jsx)(K.a,{width:180,height:32}),Object(a.jsx)(K.a,{width:120,height:32,style:{marginLeft:"5px"}})]})};const Yt=({facility:e,selectable:t=!0,showDirections:i=!0})=>{const{updateSelectedFacility:o,vaccineTypeFilter:c,focalPoint:r}=Object(n.useContext)(tt),l=(null===e||void 0===e?void 0:e.attributes)||[],s=((null===l||void 0===l?void 0:l.FacilityName)||"")+" at "+((null===l||void 0===l?void 0:l.Address)||"");return Object(a.jsxs)(rt,{selectable:t,onClick:()=>t&&o(e),"aria-label":s,children:[Object(a.jsx)(me,{facility:e,showHours:!0,selectable:t,onFacilitySelected:()=>t&&o(e),vaccineTypeFilter:c}),Object(a.jsx)(Nt,{facility:e,focalPoint:r,showDirections:i})]})};Yt.defaultProps={locationFeature:{}};var Et=Yt;const Rt=F.default.div`
+  padding: 0.5rem 1rem;
+  background: ${e=>e.theme.palette.white};
+  margin: 0.5rem 0 0.25rem 0;
+`,Wt=Object(F.default)(T.CalciteOl)`
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 1rem;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 -1rem;
+    margin-inline-end: 0;
+
+    img {
+      margin-inline-end: 0.5rem;
+    }
+  }
+`,Ht=()=>Object(a.jsx)(Rt,{children:Object(a.jsx)(Wt,{children:Object(a.jsxs)(T.CalciteLi,{children:[Object(a.jsx)("img",{src:ue,alt:"Wheelchair access icon",title:"This icon indicates a site has a physically accessible pathway to the vaccine administration",style:{width:12,height:14}}),Object(a.jsx)("span",{children:"This icon indicates a site has a physically accessible pathway to the vaccine administration."})]})})});Ht.defaultProps={};var Bt=Ht,Gt=i(546),Jt=i(216),Zt=i.n(Jt),Ut=i(217),qt=i.n(Ut),Qt=i(105);const Xt=["COVID Vaccine Johnson","COVID Vaccine Moderna","COVID Vaccine Pfizer","COVID Vaccine Pfizer-5-11 Years"],Kt=({openFilter:e})=>{let t=Object(s.h)({path:["/locations","/"],exact:!0});const{attributeFilters:i,updateAttributeFilters:o}=Object(n.useContext)(tt),[c,r]=Object(n.useState)(!1),l=Object(n.useRef)(null),d=Object(n.useRef)(null),h=Object(n.useRef)(null),{styles:p,attributes:u,update:b}=Object(Gt.a)(l.current,d.current,{placement:"bottom-start",modifiers:[{name:"offset",enabled:!0,options:{offset:[0,0]}}]}),[m,j]=Object(n.useState)((()=>{var e;return 0!==(null===(e=i.ServiceType)||void 0===e?void 0:e.length)||void 0!==i.ServiceType?i.ServiceType:["COVID Vaccine Johnson","COVID Vaccine Moderna","COVID Vaccine Pfizer","COVID Vaccine Pfizer-5-11 Years"]})),f=(e,t)=>{let a=t?null:"Yes";"walkIn"===e?o({...i,Intake_WalkIn:a}):"accessible"===e&&o({...i,ADA_Compliant:a})},g=e=>{c&&"INPUT"!==e.target.tagName&&l.current.focus(),r(!1),j(i.ServiceType||[])},x=e=>{"Escape"===e.key&&c&&g()};Object(n.useEffect)((()=>(c&&h.current.focus(),document.addEventListener("keyup",x),()=>{document.removeEventListener("keyup",x)})),[c,h]);const y={...p.popper,display:c?"flex":"none",flexDirection:"column",backgroundColor:"#FFF",borderRadius:"4px",boxShadow:"0 0 8px 0 rgba(0, 0, 0, 0.14)",padding:"10px"},v=Object(n.useMemo)((()=>{const e=i.ServiceType||[];return 0===e.length?"":e.length===Xt.length?"  All Vaccine types selected.":` ${e.length} Vaccine type${e.length>1?"s":""} selected.`}),[i.ServiceType]);return Object(a.jsxs)(ht,{role:"region","aria-label":"Filter locations",showFilter:t,children:[Object(a.jsxs)(pt,{type:"button",ref:l,onClick:e=>{b(),r(!0)},"aria-label":`Filter locations by vaccine type.${v}`,children:[(O=i.ServiceType||[],O&&0!==O.length&&O.length!==Xt.length?`Vaccine (${O.length})`:"Any vaccine"),Object(a.jsx)(qt.a,{size:16})]}),Object(a.jsx)("div",{role:"dialog",ref:d,style:y,...u.popper,children:Object(a.jsxs)(Zt.a,{onOutsideClick:g,children:[Xt.map(((e,t)=>Object(a.jsxs)(Qt.StyledCheckboxGroup,{children:[Object(a.jsx)(Qt.StyledCheckboxInput,{autoFocus:0===t,ref:0===t?h:null,checked:null===m||void 0===m?void 0:m.includes(e),onChange:t=>{var i,a;i=e,a=t.target.checked,j(a?[...m,i]:m.filter((e=>e!==i)))},type:"checkbox",value:e,name:e}),Object(a.jsx)(Qt.StyledDisplayCheckbox,{children:Object(a.jsx)(Qt.StyledCheckboxCheckIcon,{children:Object(a.jsx)("path",{d:"M12.753 3l-7.319 7.497L3.252 8.31 2 9.373l3.434 3.434L14 4.24z",fill:"white"})})}),Object(a.jsx)(bt,{children:U[e]})]},e))),Object(a.jsxs)(ut,{children:[Object(a.jsx)(te.a,{inline:!0,onClick:()=>{j(Xt)},children:"Select all"}),Object(a.jsx)(te.a,{onClick:()=>{o({...i,ServiceType:m}),r(!1),l.current.focus()},children:"Done"})]})]})}),Object(a.jsx)(ye,{active:!!i.Intake_WalkIn,onClick:()=>f("walkIn",i.Intake_WalkIn),"aria-label":"Filter locations with walk up availability","aria-pressed":!!i.Intake_WalkIn,children:"Walk-ups"}),Object(a.jsx)(ye,{invertSvg:!0,active:!!i.ADA_Compliant,onClick:()=>{f("accessible",i.ADA_Compliant)},"aria-label":"Filter accessible locations","aria-pressed":!!i.ADA_Compliant,children:Object(a.jsx)("img",{className:"tooltip-label",src:pe,alt:"Wheelchair access icon",title:"This site has a physically accessible pathway to the vaccine administration",style:{width:12,minWidth:12,height:14}})})]});var O};Kt.defaultProps={};var ei=Kt;const ti=Object(F.default)(T.CalciteP)`
+  margin: 0;
+  font-size: 13px;
+`,ii=["medicaid","medicare","private"],ai=()=>{const{attributeFilters:e,updateAttributeFilters:t}=Object(n.useContext)(tt),[i,o]=Object(n.useState)(!1),c=Object(n.useRef)(null),r=Object(n.useRef)(null),l=Object(n.useRef)(null),{styles:s,attributes:d,update:h}=Object(Gt.a)(c.current,r.current,{placement:"bottom-start",modifiers:[{name:"offset",enabled:!0,options:{offset:[0,0]}}]}),[p,u]=Object(n.useState)(e.Payment_Medicaid||""),[b,m]=Object(n.useState)(e.Payment_Medicare||""),[j,f]=Object(n.useState)(e.Payment_Private||"");Object(n.useEffect)((()=>{g()}),[]);const g=()=>{t({...e,Payment_Medicaid:p,Payment_Medicare:b,Payment_Private:j}),o(!1)},x=e=>{switch(e){case"medicaid":return"Yes"===p;case"medicare":return"Yes"===b;case"private":return"Yes"===j}},y=t=>{i&&"INPUT"!==t.target.tagName&&c.current.focus(),o(!1),u(e.Payment_Medicaid||""),m(e.Payment_Medicare||""),f(e.Payment_Private||"")},v=e=>{"Escape"===e.key&&i&&y()};Object(n.useEffect)((()=>(document.addEventListener("keyup",v),()=>{document.removeEventListener("keyup",v)})),[i,l]);const O={...s.popper,display:i?"flex":"none",flexDirection:"column",backgroundColor:"#FFF",borderRadius:"4px",boxShadow:"0 0 8px 0 rgba(0, 0, 0, 0.14)",padding:"10px"},w=Object(n.useMemo)((()=>{const t=e.InsuranceType||[];return 0===t.length?"":t.length===ii.length?"  All insurance types selected.":` ${t.length} insurance type${t.length>1?"s":""} selected.`}),[e.InsuranceType]);return Object(a.jsxs)(a.Fragment,{children:[Object(a.jsxs)(pt,{type:"button",ref:c,onClick:e=>{h(),o(!0)},"aria-label":`Filter locations by insruance type.${w}`,children:[(e=>{let t=[];return e.Payment_Medicaid&&t.push("1"),e.Payment_Medicare&&t.push("1"),e.Payment_Private&&t.push("1"),t&&0!==t.length&&t.length!==ii.length?`Insurance (${t.length})`:"Any insurance"})(e||[]),Object(a.jsx)(qt.a,{size:16})]}),Object(a.jsx)("div",{role:"dialog",ref:r,style:O,...d.popper,children:Object(a.jsxs)(Zt.a,{onOutsideClick:y,children:[ii.map(((e,t)=>Object(a.jsxs)(Qt.StyledCheckboxGroup,{children:[Object(a.jsx)(Qt.StyledCheckboxInput,{autoFocus:0===t,ref:0===t?l:null,checked:x(e),onChange:t=>{((e,t)=>{if(t)switch(e){case"medicaid":u("Yes");break;case"medicare":m("Yes");break;case"private":f("Yes")}else switch(e){case"medicaid":u("");break;case"medicare":m("");break;case"private":f("")}})(e,t.target.checked)},type:"checkbox",value:e,name:e}),Object(a.jsx)(Qt.StyledDisplayCheckbox,{children:Object(a.jsx)(Qt.StyledCheckboxCheckIcon,{children:Object(a.jsx)("path",{d:"M12.753 3l-7.319 7.497L3.252 8.31 2 9.373l3.434 3.434L14 4.24z",fill:"white"})})}),Object(a.jsx)(ti,{children:U[e]})]},e))),Object(a.jsxs)(ut,{children:[Object(a.jsx)(te.a,{inline:!0,onClick:()=>(u("Yes"),m("Yes"),void f("Yes")),children:"Select all"}),Object(a.jsx)(te.a,{onClick:()=>{g(),c.current.focus()},children:"Done"})]})]})})]})};ai.defaultProps={};var ni=ai;const oi=["flu17","flu18"],ci=({openFilter:e})=>{let t=Object(s.h)({path:["/locations","/"],exact:!0});const{attributeFilters:i,updateAttributeFilters:o}=Object(n.useContext)(tt),[c,r]=Object(n.useState)(!1),l=Object(n.useRef)(null),d=Object(n.useRef)(null),h=Object(n.useRef)(null),{styles:p,attributes:u,update:b}=Object(Gt.a)(l.current,d.current,{placement:"bottom-start",modifiers:[{name:"offset",enabled:!0,options:{offset:[0,0]}}]}),[m,j]=Object(n.useState)((()=>"No"===i.draftFluTypeUnder18Filters||null===i.draftFluTypeUnder18Filters?"Yes":"No")),[f,g]=Object(n.useState)((()=>"No"===i.AgesServed_Over18||null===i.AgesServed_Over18?"Yes":"No")),x=e=>{switch(e){case"flu17":return"Yes"===m;case"flu18":return"Yes"===f}},y=e=>{c&&"INPUT"!==e.target.tagName&&l.current.focus(),r(!1),j(i.AgesServed_Under18||""),g(i.AgesServed_Over18||"")},v=e=>{"Escape"===e.key&&c&&y()};Object(n.useEffect)((()=>(c&&h.current.focus(),document.addEventListener("keyup",v),()=>{document.removeEventListener("keyup",v)})),[c,h]);const O={...p.popper,display:c?"flex":"none",flexDirection:"column",backgroundColor:"#FFF",borderRadius:"4px",boxShadow:"0 0 8px 0 rgba(0, 0, 0, 0.14)",padding:"10px"},w=Object(n.useMemo)((()=>{let e=0;return i.AgesServed_Over18&&e++,i.AgesServed_Under18&&e++,0===e?"":e===oi.length?"  All Vaccine types selected.":` ${e} Vaccine type${e>1?"s":""} selected.`}),[i.AgesServed_Over18,i.AgesServed_Under18]);return Object(a.jsxs)(ht,{role:"region","aria-label":"Filter locations",showFilter:t,children:[Object(a.jsxs)(pt,{type:"button",ref:l,onClick:e=>{b(),r(!0)},"aria-label":`Filter locations by vaccine type.${w}`,children:[i.AgesServed_Over18===i.AgesServed_Under18?"Any age":"Age (1)",Object(a.jsx)(qt.a,{size:16})]}),Object(a.jsx)("div",{role:"dialog",ref:d,style:O,...u.popper,children:Object(a.jsxs)(Zt.a,{onOutsideClick:y,children:[oi.map(((e,t)=>Object(a.jsxs)(Qt.StyledCheckboxGroup,{children:[Object(a.jsx)(Qt.StyledCheckboxInput,{ref:0===t?h:null,checked:x(e),onChange:t=>{((e,t)=>{if(t)switch(e){case"flu17":j("Yes");break;case"flu18":g("Yes")}else switch(e){case"flu17":j("");break;case"flu18":g("")}})(e,t.target.checked)},type:"checkbox",value:e,name:e}),Object(a.jsx)(Qt.StyledDisplayCheckbox,{children:Object(a.jsx)(Qt.StyledCheckboxCheckIcon,{children:Object(a.jsx)("path",{d:"M12.753 3l-7.319 7.497L3.252 8.31 2 9.373l3.434 3.434L14 4.24z",fill:"white"})})}),Object(a.jsx)(bt,{children:U[e]})]},e))),Object(a.jsxs)(ut,{children:[Object(a.jsx)(te.a,{inline:!0,onClick:()=>(j("Yes"),void g("Yes")),children:"Select all"}),Object(a.jsx)(te.a,{onClick:()=>{o({...i,AgesServed_Under18:m,AgesServed_Over18:f}),r(!1),l.current.focus()},children:"Done"})]})]})}),Object(a.jsx)(ni,{})]})};ci.defaultProps={};var ri=ci;const li=F.default.div`
+  max-width: 350px;
+  margin: 6px 0 6px 0;
+  background: ${e=>e.theme.palette.colors.white};
+  border-radius: 20px;
+  border: 1px solid #007ac2;
+`,si=Object(F.default)(ee.ButtonGroup)`
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+  border-radius: 20px;
+  pointer-events: none;
+  border: none;
+  @media (hover: hover) and (pointer: fine) {
+    :hover {
+      color: #ffffff;
+      background: #004874;
+    }
+  }
+  > #active-button {
+    pointer-events: auto;
+  }
+`,di=Object(F.default)(te.a)`
+  width: 30vw !important;
+  padding: 0.2rem 0 0.2rem 0;
+  position: relative;
+  border: none;
+  @media (max-width: 650px) {
+      :hover {
+        color: #007ac2;
+        background: ${e=>e.theme.palette.colors.white};
+      }
+    }
+  }
+  ${e=>!e.active&&F.css`
+      color: #ffffff !important;
+      border-radius: 20px;
+      width: 40vw !important;
+      z-index: 1;
+    `};
+`,hi={background:"#0a5796"},pi=["COVID","Flu"];var ui=()=>{const{updateVaccineTypeFilter:e,updateAttributeFilters:t,vaccineTypeFilter:i}=Object(n.useContext)(tt),o=a=>{a!==i.VaccineType&&(i=>{e({VaccineType:i}),t({ServiceType:[],ADA_Compliant:null,Intake_WalkIn:null,Payment_LowNoCost:"",Payment_Medicaid:"",Payment_Medicare:""})})(a)};return Object(a.jsx)(li,{children:Object(a.jsx)(si,{isToggle:!0,children:pi.map(((e,t)=>Object(a.jsx)(di,{id:i.VaccineType===e?"inactive-button":"active-button",clear:i.VaccineType!==e,active:i.VaccineType!==e,style:i.VaccineType===e?hi:null,onClick:()=>{o(e)},children:U[e]},t)))})})},bi=i.p+"static/media/logo.9d719c66.svg";const mi=e=>{const{mapView:t,locateWidget:i,updateSortedFacilities:o,attributeFilters:c,sortedFacilities:r,vaccineTypeFilter:s}=Object(n.useContext)(tt);Object(n.useEffect)((()=>{window.scrollTo(0,0),o()}),[s.VaccineType,t,c]);const d=Object(n.useMemo)((()=>null===r?["loading-card-1","loading-card-2","loading-card-3"].map(((e,t)=>Object(a.jsx)(Et,{facility:null,selectable:!1,showDirections:!1},t))):(null===r||void 0===r?void 0:r.length)?Object(a.jsxs)(a.Fragment,{children:["COVID"===s.VaccineType?Object(a.jsx)(Bt,{}):null,r.map(((e,t)=>Object(a.jsx)(Et,{facility:e,selectable:!1,showDirections:!1},e.attributes.OBJECTID)))]}):Object(a.jsx)(wt,{children:"Keep checking, availability information is updated frequently"})),[r,s.VaccineType]);return Object(a.jsxs)(gt,{children:[Object(a.jsxs)(xt,{children:[Object(a.jsxs)(yt,{children:[Object(a.jsx)("img",{src:bi,alt:"NYC Logo"}),Object(a.jsx)(vt,{children:"COVID-19 and Flu Vaccine Finder"})]}),null!==U.homeNotice&&Object(a.jsx)(It,{full:!0,children:Object(a.jsx)(At,{children:U.homeNotice})}),Object(a.jsxs)(Ct,{role:"region","aria-labelledby":"findLocationLabel",children:[Object(a.jsx)(Ot,{id:"findLocationLabel",children:"Find a Location"}),Object(a.jsxs)(St,{children:[Object(a.jsx)(Lt,{}),Object(a.jsx)(l.b,{to:"/locations",style:{flexGrow:0},title:"Use Current Location","aria-label":"Use Current Location",children:Object(a.jsx)(kt,{onClick:()=>i.locate(),fullWidth:!0,icon:Object(a.jsx)(Tt.a,{size:20}),iconPosition:"before","aria-label":"Use Current Location"})})]})]}),Object(a.jsx)(ui,{}),"COVID"===s.VaccineType?Object(a.jsx)(ei,{}):Object(a.jsx)(ri,{})]}),Object(a.jsx)(ft,{children:d})]})};mi.defaultProps={};var ji=mi,fi=i(140);const gi=F.default.div`
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+`,xi=F.default.div`
+  ${fi.StyledAccordion} {
+    width: 100%;
+    margin-top: 15px;
+    &:last-child {
+      margin-bottom: 5rem;
+    }
+    ${fi.StyledAccordionTitle} {
+      font-size: 1rem;
+      border-radius: 0;
+      svg {
+        min-height: 16px;
+        min-width: 16px;
+      }
+      :hover {
+        background-color: ${e=>e.theme.palette.colors.offWhite};
+      }
+    }
+  }
+`,yi=F.default.div`
+  border-top: 1px solid #eaeaea;
+`;var vi=i(54),Oi=i.n(vi);var wi=()=>{const[e,t]=Object(n.useState)([]);return Object(a.jsx)(gi,{"aria-label":"FAQ Container",children:Object(a.jsx)(xi,{"aria-label":"FAQ Dropdown",children:Object(a.jsxs)(Oi.a,{iconPosition:"start",onAccordionChange:function(i,a){e.includes(a)?t([e.filter((e=>a!==e))]):t([...e,a])},activeSectionIndexes:e,children:[Object(a.jsx)(yi,{children:Object(a.jsxs)(wt,{children:["This FAQ is specifically for information about the COVID-19 vaccine. For information about the seasonal flu vaccination, please visit"," ",Object(a.jsx)(T.CalciteA,{href:"https://nyc.gov/flu",target:"_blank",children:"nyc.gov/flu"}),"."]})}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"What is the Vaccine Finder?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"What is the Vaccine Finder?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"The Vaccine Finder is a one-stop site for New Yorkers to find their nearest COVID-19 vaccination location. The Vaccine Finder can also provide New Yorkers with information to schedule vaccination appointments. You can search specifically for facilities that offer walk-up vaccinations (no appointment necessary) and for certain vaccine brands."}),Object(a.jsx)(wt,{children:"To get started, type in an address, ZIP code, or click \u201cnear me\u201d to find a list of nearby provider locations. You will also see links and phone numbers to schedule an appointment. Many sites do not require an appointment to get vaccinated."}),Object(a.jsx)(wt,{noticeText:!0,children:"Each site manages its own schedules and appointments. This tool is intended to help make site information \u2013 including scheduling options \u2013 easily accessible to New Yorkers."})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"Who can get vaccinated right now?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"Who can get vaccinated right now?"}),Object(a.jsx)(vi.AccordionContent,{children:Object(a.jsx)(wt,{children:"Everyone 5 years of age or older is eligible for the COVID-19 vaccine. People who are 5 to 17 years old are only eligible for the Pfizer vaccine."})})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"How can I get vaccinated at home?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"How can I get vaccinated at home?"}),Object(a.jsx)(vi.AccordionContent,{children:Object(a.jsxs)(wt,{children:["All New Yorkers 5 and older can be vaccinated at home. You can sign up for in-home vaccination at"," ",Object(a.jsx)(T.CalciteA,{href:"https://forms.cityofnewyork.us/f/home",target:"_blank",children:"https://forms.cityofnewyork.us/f/home"})," ","(not accessible on Internet Explorer) or by calling 877-VAX-4NYC (877-829-4692). You will then be contacted to schedule your in-home vaccination. You can choose to receive the two-dose Pfizer-BioNTech or Moderna vaccine or the one-dose Johnson & Johnson/Janssen vaccine. Multiple people in the same household can be vaccinated during a single visit."]})})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"How do I get a reasonable accommodation to schedule an appointment or travel to a vaccination site?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"How do I get a reasonable accommodation to schedule an appointment or travel to a vaccination site?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsxs)(wt,{children:["People with disabilities can get help making a vaccination appointment at an accessible site ",Object(a.jsx)("strong",{children:"or"})," traveling to their appointment and getting their shot. This kind of help is called a reasonable accommodation."]}),Object(a.jsx)(wt,{children:"You can get a reasonable accommodation if you have difficulty with:"}),Object(a.jsx)(wt,{children:Object(a.jsxs)(T.CalciteUl,{children:[Object(a.jsx)(T.CalciteLi,{children:"Seeing or hearing"}),Object(a.jsx)(T.CalciteLi,{children:"Thinking or concentrating"}),Object(a.jsx)(T.CalciteLi,{children:"Speaking"}),Object(a.jsx)(T.CalciteLi,{children:"Using your arms"}),Object(a.jsx)(T.CalciteLi,{children:"Taking care of daily chores"}),Object(a.jsx)(T.CalciteLi,{children:"Coping with feelings of sadness or anxiety"}),Object(a.jsx)(T.CalciteLi,{children:"Getting around or climbing stairs"})]})}),Object(a.jsxs)(wt,{children:["You can request a reasonable accommodation at a City-run vaccine site through the City's"," ",Object(a.jsx)(T.CalciteA,{href:"https://vax4nyc.nyc.gov/patient/s/",target:"_blank",children:"online appointment scheduler"})," ","or by calling 877-VAX-4NYC (877-829-4692). You can also ask for a reasonable accommodation from staff at a City-run vaccination site."]}),Object(a.jsx)(wt,{children:"You can also schedule an in-home vaccination (see details above)."})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"What should I do before I go to a vaccination site?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"What should I do before I go to a vaccination site?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"Make an appointment if the site requires one."}),Object(a.jsx)(wt,{children:"Wear a face covering to your appointment. You will not be admitted to the site without one."}),Object(a.jsxs)(wt,{children:["You will also need to complete the"," ",Object(a.jsx)(T.CalciteA,{href:"https://forms.ny.gov/s3/vaccine",target:"_blank",children:"NYS COVID-19 Vaccine Form"})," ","before your appointment. The person administering the vaccine is required to check that you completed the form before you can get vaccinated."]}),Object(a.jsx)(wt,{children:"Reschedule your appointment if you are not feeling well on the day of your appointment."})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"What should I bring to my appointment to prove I am eligible for a vaccine?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"What should I bring to my appointment to prove I am eligible for a vaccine?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"You must bring proof of age to your vaccination."}),Object(a.jsxs)(wt,{children:["You will ",Object(a.jsx)("strong",{children:"not"})," need to provide proof of immigration status or a social security number to get vaccinated. ID is only required for proof of age."]}),Object(a.jsx)(wt,{children:"When you receive the vaccine, your privacy will be protected. There are strict laws in place to ensure confidentiality of your personal information."}),Object(a.jsx)(wt,{children:"Proof you are 5 or older may include:"}),Object(a.jsx)(wt,{children:Object(a.jsxs)(T.CalciteUl,{children:[Object(a.jsx)(T.CalciteLi,{children:"Driver's license or non-driver ID"}),Object(a.jsx)(T.CalciteLi,{children:"IDNYC"}),Object(a.jsx)(T.CalciteLi,{children:"State or government-issued birth certificate"}),Object(a.jsx)(T.CalciteLi,{children:"Current U.S. passport or valid foreign passport"}),Object(a.jsx)(T.CalciteLi,{children:"Permanent resident card"}),Object(a.jsx)(T.CalciteLi,{children:"Certificate of Naturalization or Citizenship"}),Object(a.jsx)(T.CalciteLi,{children:"Life insurance policy with birthdate"}),Object(a.jsx)(T.CalciteLi,{children:"Marriage certificate with birthdate"}),Object(a.jsx)(T.CalciteLi,{children:"For people younger than 18, a parent or guardian can accompany them to the vaccination site to attest to their age"})]})}),Object(a.jsx)(wt,{children:"A parent or guardian must provide consent for their child to be vaccinated in person or by phone. Some providers, including all City-run sites, will accept proof of consent in writing. However, in-person or phone consent is preferred."}),Object(a.jsx)(wt,{children:"Anyone 5 to 15 years of age must be accompanied to the vaccination site by a parent or guardian, or by another adult caregiver designated by the parent or guardian."}),Object(a.jsxs)(wt,{children:["The child must also have a completed"," ",Object(a.jsx)(T.CalciteA,{href:"https://forms.ny.gov/s3/vaccine",target:"_blank",children:"NYS COVID-19 Immunization Screening and Consent Form"}),"."]})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"How can I get to my vaccination site?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"How can I get to my vaccination site?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"If you are 65 or older, cannot use public or private transportation and don't have anyone to take you to your vaccination appointment, other transportation options are available."}),Object(a.jsx)(wt,{children:"To request free transportation to and from a vaccination appointment for city residents 65 and older, as well as for those with disabilities who have no other way to get to a vaccination site, call the NYC Vaccine Hotline 877-VAX4NYC (877-829-4692)."}),Object(a.jsx)(wt,{children:"If you are younger than 18, you must have your parent or guardian call to schedule the trip."})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"When do I get my second dose of the Pfizer or Moderna vaccine?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"When do I get my second dose of the Pfizer or Moderna vaccine?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"The Pfizer and Moderna vaccines require two shots. You should get your second Pfizer shot 21 days after the first one, or your second Moderna shot 28 days after the first one. If you are unable to get your second shot on that schedule, get it as soon as possible after that date. You should get the second dose no matter how much time has passed."}),Object(a.jsx)(wt,{children:"The Johnson & Johnson/Janssen vaccine only requires one dose."})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"Should I get a third dose or booster shot?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"Should I get a third dose or booster shot?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"Vaccine booster shots are now available for many New Yorkers. They are intended to help people boost their immunity from the initial vaccination series."}),Object(a.jsx)(wt,{children:"Some people who got the Pfizer or Moderna COVID-19 vaccine at least six months ago and who are at increased risk of COVID-19 exposure or severe COVID-19 illness can get a booster shot. Everyone who got the Johnson & Johnson vaccine at least two months ago should get a booster shot."}),Object(a.jsx)(wt,{children:"People have the choice of getting any of the three authorized vaccines for their booster shot (Pfizer, Moderna, Johnson & Johnson) and do not need to get the same vaccine as their initial series."}),Object(a.jsxs)(wt,{children:[Object(a.jsx)(T.CalciteA,{href:"https://www1.nyc.gov/site/doh/covid/covid-19-vaccines.page",target:"_blank",children:"Learn if you are eligible for a booster shot"}),"."]})]})]}),Object(a.jsxs)(vi.AccordionSection,{role:"article","aria-label":"Why should I get vaccinated?",children:[Object(a.jsx)(vi.AccordionTitle,{contained:!0,children:"Why should I get vaccinated?"}),Object(a.jsxs)(vi.AccordionContent,{children:[Object(a.jsx)(wt,{children:"Vaccination is the best way to protect yourself from severe COVID-19 illness, hospitalization and death. Vaccination also helps protect the people around you, since you are much less likely to get and spread COVID-19."}),Object(a.jsxs)(wt,{children:[Object(a.jsx)(T.CalciteA,{href:"https://www1.nyc.gov/site/doh/covid/covid-19-vaccine-facts.page",target:"_blank",children:"Learn more about the safety and effectiveness of the COVID-19 vaccines."}),"."]})]})]}),Object(a.jsx)(yi,{children:Object(a.jsx)(wt,{children:"This application does not support use with Internet Explorer. When utilizing this application we suggest using a different browser."})})]})})})};const Ci=e=>{Object(n.useEffect)((()=>{window.scrollTo(0,0)}),[]);const{vaccineTypeFilter:t}=Object(n.useContext)(tt);return Object(a.jsxs)(gt,{children:[Object(a.jsxs)(xt,{children:[Object(a.jsxs)(yt,{children:[Object(a.jsx)(l.b,{to:"/",style:{flexGrow:0,lineHeight:0},"aria-label":"Link to NYC Vaccinefinder homepage",children:Object(a.jsx)("img",{src:bi,alt:"NYC Logo"})}),Object(a.jsx)(vt,{children:"COVID-19 and Flu Vaccine Finder"})]}),Object(a.jsx)(Ct,{children:Object(a.jsx)(Ot,{style:{marginBottom:0},children:"Frequently Asked Questions"})})]}),Object(a.jsx)(Pt,{"aria-label":"Frequently Asked Questions",children:Object(a.jsx)(wi,{})})]})};Ci.defaultProps={};var ki=Ci;const Si=F.default.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem ${e=>e.theme.global.padding};
+  box-sizing: border-box;
+  margin-inline-end: ${e=>e.theme.global.margin};
+  background: ${e=>e.theme.palette.colors.primary};
+  z-index: 4;
+
+  ${Mt} {
+    box-shadow: 0 0 0 1px rgba(120, 120, 120),
+      rgba(0, 0, 0, 0.3) 0px 0px 16px 0px;
+
+    .esri-search__suggestions-menu {
+      width: 100%;
+    }
+  }
+`,Pi=Object(F.default)(T.CalciteH1)`
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: ${e=>e.theme.palette.colors.white};
+  margin-bottom: 0;
+  margin-inline-start: 1.5rem;
+  @media screen and (max-width: 800px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
+`,Ii=F.default.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  h1 {
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  img {
+    height: 28px;
+  }
+
+  @media screen and (max-width: 650px) {
+    img {
+      height: 22px;
+    }
+  }
+`,Ai=F.default.div`
+  width: 70%;
+  max-width: 24rem;
+
+  @media screen and (max-width: 800px) {
+    max-width: 350px;
+  }
+
+  input {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+`,Fi=F.default.div`
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  ${e=>e.hide&&F.css`
+      position: fixed;
+      top: -500vh;
+      top: calc(var(--vh, 1vh) * -500);
+    `};
+
+  ${Si} {
+    height: 53px;
+  }
+`,Ti=F.default.div`
+  background: ${e=>e.theme.palette.colors.white};
+  padding: 0 0.775rem;
+  @media (max-width: 650px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  ${e=>!e.showFilter&&F.css`
+      visibility: hidden;
+      height: 0;
+      padding 0;
+    `};
+`,$i=F.default.main`
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  overflow-y: auto;
+  height: calc(100vh - 98px);
+
+  @media screen and (max-width: 650px) {
+    ${e=>e.filterVisible&&F.css`
+        z-index: 2;
+      `};
+  }
+`,Vi=F.default.div`
+  position: relative;
+  flex: 0 0 ${e=>e.theme.global.sidebarWidth};
+  height: 100%;
+  /* overflow-y: auto; */
+  background-color: ${e=>e.theme.palette.colors.offWhite};
+
+  @media screen and (max-width: 650px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    ${e=>"map"===e.mView&&!e.filterVisible&&F.css`
+        display: none;
+      `};
+
+    ${je} {
+      position: fixed;
+    }
+  }
+`,zi=F.default.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100vw - ${e=>e.theme.global.sidebarWidth});
+  flex: 1 0 auto;
+  height: 100%;
+  min-width: 200px;
+  background: #a7d6fe;
+
+  /* Map styles that can't be directly in a styled component Map */
+  .map-container {
+    height: 100%;
+    width: 100%;
+
+    ${e=>!e.hasMapView&&F.css`
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+      `};
+  }
+
+  @media screen and (max-width: 650px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  ${xe} {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 650px) {
+      display: block;
+
+      ${e=>"map"!==e.mView&&F.css`
+          display: none;
+        `};
+    }
+  }
+`;var Di=i.p+"static/media/whitelogo.4c3de0f4.svg";const Mi=({...e})=>{const{searchTerm:t}=Object(n.useContext)(tt);return Object(a.jsxs)(Si,{...e,role:"banner","aria-label":"Header",children:[Object(a.jsxs)(Ii,{children:[Object(a.jsx)(l.b,{to:"/",style:{lineHeight:1,marginInlineEnd:"1.55rem"},"aria-label":"Link to NYC Vaccinefinder homepage",children:Object(a.jsx)("img",{src:Di,alt:"NYC Logo"})}),Object(a.jsx)(Pi,{children:"COVID-19 and Flu Vaccine Finder"})]}),Object(a.jsx)(Ai,{children:Object(a.jsx)(Lt,{searchTerm:t})})]})};Mi.defaultProps={};var _i=Mi;const Li=F.default.div`
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  background: ${e=>e.theme.palette.colors.accent1};
+  color: ${e=>e.theme.palette.colors.white};
+`,Ni=Object(F.default)(T.CalciteP)`
+  margin: 0.5rem ${e=>e.theme.global.margin};
+`;var Yi=({children:e,...t})=>Object(a.jsx)(Li,{...t,children:Object(a.jsx)(Ni,{children:"Keep checking the site! New appointments, providers and locations are regularly added."})});const Ei=F.default.section`
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100%;
+
+  @media screen and (max-width: 650px) {
+    padding-bottom: 65px;
+  }
+
+  ${rt} {
+    margin-bottom: 0.25rem;
+  }
+
+  ${st} {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
+  }
+`,Ri=F.default.div`
+  padding: 0.25rem 0.25rem;
+  background: ${e=>e.theme.palette.white};
+  margin: 0.5rem 0 0.25rem 0;
+`,Wi=Object(F.default)(T.CalciteP)`
+  max-width: 600px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.5rem 1rem;
+  color: ${e=>e.theme.palette.colors.black};
+`;var Hi=i(414),Bi=i.n(Hi),Gi=i(415),Ji=i.n(Gi),Zi=i.p+"static/media/map.fe2a3317.svg";const Ui=e=>{const t=Object(s.e)();let{pathname:i,search:n}=Object(s.f)();const{id:o}=Object(s.g)(),c=new URLSearchParams(n).get("mView");let r,l;"map"===c?o?(r="Back",l=Object(a.jsx)(Ji.a,{size:16})):(r="View list",l=Object(a.jsx)(Bi.a,{size:16})):(r="View map",l=Object(a.jsx)("img",{src:Zi,alt:"map"}));return Object(a.jsx)(st,{icon:l,iconPosition:"before",onClick:()=>{"map"===c?t.push({pathname:i,search:""}):t.push({pathname:i,search:"?mView=map"})},...e,children:r})};Ui.defaultProps={};var qi=Ui;const Qi=()=>{const{facilities:e,vaccineTypeFilter:t}=Object(n.useContext)(tt),i=Object(n.useMemo)((()=>null===e?["loading-card-1","loading-card-2","loading-card-3","loading-card-4","loading-card-5","loading-card-6","loading-card-7","loading-card-8","loading-card-9","loading-card-10"].map(((e,t)=>Object(a.jsx)(Et,{facility:null,selectable:!1,showDirections:!1},e))):(null===e||void 0===e?void 0:e.length)?Object(a.jsx)(a.Fragment,{children:e.map(((e,t)=>Object(a.jsx)(Et,{facility:e},e.attributes.OBJECTID)))}):Object(a.jsx)(Ri,{children:Object(a.jsxs)(Wi,{children:["There are no sites that meet your search criteria.",Object(a.jsx)("br",{}),"Adjust the filter to see additional sites."]})})));return Object(a.jsxs)(Ei,{"aria-label":"Locations list",children:["COVID"===t.VaccineType&&Object(a.jsx)(Bt,{}),i,Object(a.jsx)(qi,{})]})};Qi.defaultProps={};var Xi=Qi,Ki=i(299);const ea=F.default.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background: ${e=>e.theme.palette.colors.white};
+  box-sizing: border-box;
+
+  ${je} ${xe} {
+    margin-inline-end: 0.5rem;
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    position: fixed;
+  }
+`,ta=F.default.div`
+  padding: ${e=>e.theme.global.padding};
+  border-bottom: 1px solid ${e=>e.theme.palette.colors.offWhite};
+
+  h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.75rem;
+  }
+`,ia=F.default.div`
+  display: flex;
+  flex-wrap: wrap;
+`,aa=Object(F.default)(Ki.FormControl)`
+  margin: 0;
+  margin-inline-start: -0.125rem;
+
+  legend {
+    margin: 0.5rem 0 0.125rem;
+    font-size: 0.9rem;
+    min-width: 180px;
+  }
+
+  ${Qt.StyledCheckboxLabel} {
+    font-size: 0.8rem;
+  }
+`,na=F.default.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: ${e=>e.theme.global.padding};
+  border-bottom: 1px solid ${e=>e.theme.palette.colors.offWhite};
+  box-sizing: border-box;
+`,oa=Object(F.default)(T.CalciteH2)`
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600 !important;
+  line-height: 1.55rem !important;
+`,ca=({children:e,onClose:t,...i})=>Object(a.jsxs)(na,{...i,children:[Object(a.jsx)(oa,{children:e}),t&&Object(a.jsx)(te.a,{iconButton:!0,icon:Object(a.jsx)(oe.a,{}),onClick:t,"aria-label":"close panel"})]});ca.defaultProps={};var ra=ca;const la=({children:e,...t})=>Object(a.jsx)(je,{...t,children:e});la.defaultProps={};var sa=la,da=i(225),ha=i.n(da);const pa=e=>{const{attributeFilters:t,updateAttributeFilters:i,setFilterVisible:o}=Object(n.useContext)(tt),[c,r]=Object(n.useState)(t.facilityType||[]),l=({value:e,checked:t})=>{r(t?[...c,e]:c.filter((t=>t!==e)))};return Object(a.jsxs)(ea,{children:[Object(a.jsx)(ra,{onClose:()=>o(!1),children:"Filters"}),Object(a.jsx)(ta,{children:Object(a.jsx)(ia,{children:Object(a.jsx)(aa,{children:Object(a.jsxs)(Ki.Fieldset,{name:"facilityType",children:[Object(a.jsx)(ha.a,{name:"CommunityHealthCenter",checked:null===c||void 0===c?void 0:c.includes("CommunityHealthCenter"),onChange:e=>{l("CommunityHealthCenter",e.target.checked)},children:U.CommunityHealthCenter}),Object(a.jsx)(ha.a,{name:"HospitalBasedHealthCenter",checked:null===c||void 0===c?void 0:c.includes("HospitalBasedHealthCenter"),onChange:e=>{l("HospitalBasedHealthCenter",e.target.checked)},children:U.HospitalBasedHealthCenter}),Object(a.jsx)(ha.a,{name:"Pharmacy",checked:null===c||void 0===c?void 0:c.includes("Pharmacy"),onChange:e=>{l("Pharmacy",e.target.checked)},children:U.Pharmacy}),Object(a.jsx)(ha.a,{name:"PrimaryCare",checked:null===c||void 0===c?void 0:c.includes("PrimaryCare"),onChange:e=>{l("PrimaryCare",e.target.checked)},children:U.PrimaryCare}),Object(a.jsx)(ha.a,{name:"UrgentCare",checked:null===c||void 0===c?void 0:c.includes("UrgentCare"),onChange:e=>{l("UrgentCare",e.target.checked)},children:U.UrgentCare})]})})})}),Object(a.jsxs)(sa,{children:[Object(a.jsx)(xe,{half:!0,onClick:()=>{i({facilityType:c}),o(!1)},children:"Apply"}),Object(a.jsx)(xe,{white:!0,half:!0,onClick:()=>o(!1),children:"Cancel"})]})]})};pa.defaultProps={};var ua=pa;const ba=F.default.div`
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0 4rem 0;
+  background: ${e=>e.theme.palette.offWhite};
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  ${je} > * {
+    margin-inline-end: 0.5rem;
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+
+  ${_} {
+    padding-inline-start: 1rem;
+    background: ${e=>e.theme.palette.white};
+    border-radius: 6px;
+  }
+`;var ma=i.p+"static/media/mobile-map-bg.4141d4dd.jpg";const ja=F.default.div`
+  display: none;
+  padding: 0.25rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  background: ${e=>e.theme.palette.white};
+  border-radius: 6px;
+  overflow: hidden;
+
+  h5 {
+    color: ${e=>e.theme.palette.colors.primary};
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 650px) {
+    display: block;
+  }
+`,fa=Object(F.default)(T.CalciteH5)`
+  font-size: 0.9rem !important;
+  font-weight: bold;
+`,ga=F.default.div`
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  background: #a7d6fe;
+  background-image: url(${ma});
+  background-position: center;
+  background-size: cover;
+`,xa=F.default.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+
+  ${st} {
+    background: ${e=>e.theme.palette.colors.button};
+    border: ${e=>e.theme.palette.colors.button};
+  }
+`,ya=()=>{const{mapView:e,mapLoaded:t}=Object(n.useContext)(tt),[i,o]=Object(n.useState)(null);return Object(n.useEffect)((()=>{if(e&&t){const t=setTimeout((()=>{e.takeScreenshot({format:"png",width:400,height:300}).then((function(e){o(e)})),clearTimeout(t)}),2e3);return()=>{clearTimeout(t)}}}),[e,t]),Object(a.jsxs)(ja,{children:[Object(a.jsx)(fa,{children:"Location on map"}),Object(a.jsxs)(ga,{children:[i&&Object(a.jsx)("img",{src:i.dataUrl,alt:"map of this facility"}),Object(a.jsx)(xa,{children:Object(a.jsx)(qi,{})})]})]})};ya.defaultProps={};var va=ya,Oa=i(99),wa=i.n(Oa);const Ca=Object(F.default)(Oa.TableRow)`
+  td {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    ${e=>e.isToday&&F.css`
+        font-weight: 600;
+      `};
+  }
+`,ka=F.default.div`
+  margin: 0.5rem 0;
+  background: ${e=>e.theme.palette.white};
+  border-radius: 6px;
+`,Sa=F.default.div`
+  margin: 0.5rem 0;
+  padding-inline-start: 0.3rem;
+  border-left: 0.2rem solid ${e=>e.theme.palette.offWhite};
+  ${T.CalciteP} {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+`,Pa=(F.default.div``,F.default.div``,Object(F.default)(T.CalciteH3)`
+  display: inline-flex;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  color: ${e=>e.theme.palette.colors.primary};
+
+  svg {
+    margin-inline-end: 0.25rem;
+  }
+`,F.default.div`
+  padding: 0.5rem 1rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+`,Object(F.default)(T.CalciteH4)`
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: ${e=>e.theme.palette.darkGray};
+  }
+
+  svg {
+    margin-inline-start: 0.75rem;
+  }
+`,F.default.div`
+  font-size: 0.8rem;
+  display: flex;
+  color: ${e=>e.theme.palette.darkGray};
+
+  ${e=>e.expanded&&F.css`
+      flex-direction: column;
+    `};
+
+  p {
+    margin: 0;
+    margin-inline-end: 1rem;
+    font-weight: 400;
+
+    ${e=>e.expanded&&F.css`
+        padding-inline-start: 0.5rem;
+      `};
+  }
+`,Object(F.default)(T.CalciteP)`
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  margin: 0.75rem 0;
+  padding-inline-start: 0.5rem;
+  color: ${e=>e.theme.palette.darkGray};
+`,({service:e})=>{const t=Object(n.useMemo)((()=>(new Date).getDay()),[]);return"Call Site for Hours"!==e.Hours_Sunday?Object(a.jsx)(ka,{children:Object(a.jsx)(Sa,{id:"hours_table_container",children:Object(a.jsx)(wa.a,{plain:!0,justified:!0,children:Object(a.jsxs)(Oa.TableBody,{children:[Object(a.jsxs)(Ca,{isToday:0===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Sunday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Sunday?U.closed:e.Hours_Sunday})]}),Object(a.jsxs)(Ca,{isToday:1===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Monday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Monday?U.closed:e.Hours_Monday})]}),Object(a.jsxs)(Ca,{isToday:2===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Tuesday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Tuesday?U.closed:e.Hours_Tuesday})]}),Object(a.jsxs)(Ca,{isToday:3===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Wednesday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Wednesday?U.closed:e.Hours_Wednesday})]}),Object(a.jsxs)(Ca,{isToday:4===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Thursday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Thursday?U.closed:e.Hours_Thursday})]}),Object(a.jsxs)(Ca,{isToday:5===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Friday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Friday?U.closed:e.Hours_Friday})]}),Object(a.jsxs)(Ca,{isToday:6===t,children:[Object(a.jsx)(Oa.TableCell,{children:"Saturday"}),Object(a.jsx)(Oa.TableCell,{children:"Closed - Closed"===e.Hours_Saturday?U.closed:e.Hours_Saturday})]})]})})})}):null});Pa.defaultProps={};var Ia=Pa;const Aa=F.default.div`
+  margin: 0.5rem 0 0.1rem 0;
+  background: ${e=>e.theme.palette.white};
+  border-radius: 6px;
+  display: flex;
+  padding-inline-start: 1rem;
+`,Fa=Object(F.default)(T.CalciteH4)`
+  color: ${e=>e.theme.palette.colors.primary};
+  font-weight: bold;
+  padding-inline-start: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 2rem !important;
+  margin: 0;
+`,Ta=F.default.div`
+  background: ${e=>e.theme.palette.white};
+
+  ${fi.StyledAccordionTitle} {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-inline-start: 1rem;
+    padding: 0;
+    border: 0;
+  }
+  ${fi.StyledAccordionContent} {
+    padding: 0 0.775rem 0 0.775rem;
+    padding-inline-start: 1.5rem;
+  }
+`,$a=F.default.div`
+  padding: 0.5166666666666667rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  :hover {
+    background-color: ${e=>e.theme.palette.colors.offWhite};
+  }
+`,Va=F.default.div`
+  display: flex;
+  align-items: center;
+`,za=F.default.div`
+  margin: 0.5rem 0;
+  padding-inline-start: 0.3rem;
+  border-left: 0.2rem solid ${e=>e.theme.palette.offWhite};
+  ${T.CalciteP} {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+`;Object(F.default)(te.a)`
+  background-color: ${e=>e.theme.palette.colors.button};
+  color: ${e=>e.theme.palette.colors.white};
+  padding: 0.6rem;
+  :hover {
+    background: ${e=>e.theme.palette.colors.buttonHover};
+    color: ${e=>e.theme.palette.colors.white};
+  }
+`;var Da=i(416),Ma=i.n(Da),_a=i(417),La=i.n(_a);const Na={paddingInlineStart:"0.5rem",paddingInlineEnd:"0.5rem"},Ya={paddingInlineStart:"0.5rem",paddingInlineEnd:"0.5rem"};var Ea=({service:e})=>{const[t,i]=Object(n.useState)([]);return Object(a.jsx)(Oi.a,{iconPosition:"",onAccordionChange:(e,a)=>{t.includes(a)?i([]):i([a])},activeSectionIndexes:t,children:Object(a.jsxs)(vi.AccordionSection,{children:[Object(a.jsx)(vi.AccordionTitle,{children:Object(a.jsx)($a,{children:Object(a.jsxs)(Va,{children:[Object(a.jsx)(Z.a,{style:Na,size:16}),(o=null===e||void 0===e?void 0:e.ServiceType,"COVID Vaccine Johnson"===o?"COVID Vaccine Johnson (18+)":"COVID Vaccine Moderna"===o?"COVID Vaccine Moderna (18+)":"COVID Vaccine Pfizer"===o?"COVID Vaccine Pfizer (12+)":"COVID Vaccine Pfizer-5-11 Years"===o?"COVID Vaccine Pfizer (5-11)":o),0===t.length?Object(a.jsx)(Ma.a,{style:Ya,size:16}):Object(a.jsx)(La.a,{style:Ya,size:16})]})})}),Object(a.jsxs)(vi.AccordionContent,{children:[(null===e||void 0===e?void 0:e.AdditionalInfo)?Object(a.jsx)(za,{children:Object(a.jsx)(T.CalciteP,{children:e.AdditionalInfo})}):null,Object(a.jsx)(Ia,{service:e}),Object(a.jsx)(za,{children:Object(a.jsx)(T.CalciteP,{children:"Yes"===e.Intake_ApptRequired?"Appointment Required":"No"===e.Intake_ApptRequired?"Appointment Not Required":null})}),Object(a.jsxs)(za,{children:["Flu Vaccine"===e.ServiceType?Object(a.jsx)(T.CalciteP,{children:Object(a.jsx)("b",{children:"Insurance and Payment Types Accepted:"})}):null,Object(a.jsx)(T.CalciteP,{children:(()=>{let t="";if("Flu Vaccine"===e.ServiceType){let i=[];"Yes"===e.Payment_Medicaid&&i.push("Medicaid"),"Yes"===e.Payment_Medicare&&i.push("Medicare"),"Yes"===e.Payment_Private&&i.push("Private"),"Yes"===e.Payment_LowNoCost&&i.push("No-Cost"),t=i.join(", ")}else t="All COVID-19 Vaccines are completely free";return t})()})]})]})]})});var o},Ra=i.p+"static/media/syringe-16.5a2f1650.svg";var Wa=({facility:e,vaccineTypeFilter:t})=>Object(a.jsxs)(a.Fragment,{children:[Object(a.jsxs)(Aa,{children:[Object(a.jsx)("img",{src:Ra,alt:"Syringe"}),Object(a.jsx)(Fa,{children:"Vaccines offered at this location"})]}),Object(a.jsx)(Ta,{children:e.services.map((i=>{if(i.ServiceType.includes(t.VaccineType))return Object(a.jsx)(Ea,{service:i,phone:e.Phone},i.OBJECTID)}))})]});const Ha=()=>{var e;const[t,i]=Object(n.useState)(null),{id:o}=Object(s.g)(),{selectedFacility:c,updateSelectedFacility:r,preloadedFacilityId:l,setPreloadedFacilityId:d,vaccineTypeFilter:h,focalPoint:p}=Object(n.useContext)(tt);Object(n.useEffect)((()=>{!o||l||c||d(o)}),[o,l,c,d]),Object(n.useEffect)((()=>{p&&c&&!(null===c||void 0===c?void 0:c.proximity)&&(c.proximity=Ze(p,c),i(c.proximity))}),[c,p,r]);let u=null===c||void 0===c||null===(e=c.attributes)||void 0===e?void 0:e.Website;return u&&x(u)&&(u=`mailto:${u}`),c?Object(a.jsxs)(ba,{children:[Object(a.jsx)(me,{facility:c,onClose:()=>r(null),proximity:t,showVaccinesOffered:!1,vaccineTypeFilter:h}),Object(a.jsx)(Wa,{facility:c,vaccineTypeFilter:h}),Object(a.jsx)(va,{}),Object(a.jsx)(We,{selectedFacility:c,focalPoint:p})]}):null};Ha.defaultProps={};var Ba=Ha;var Ga=i(221),Ja=i(336),Za=i(337);function Ua(e,t){return function(e){return"string"===typeof e||!!e.baseMap||!!e.operationalLayers}(e)?async function(e,t){const i="string"===typeof e?new Za.a({portalItem:{id:e}}):Za.a.fromJSON(e),{view:a}=t;await i.load();const n=i.layers.find((e=>"Facilities"===e.title));return i.layers.find((e=>e.title==="Services")).outFields=["*"],n.outFields=["*"],new Ja.a({...a,map:i})}(e,t):function(e,t){const i=new Ga.a({...e}),{view:a}=t;return new Ja.a({...a,map:i})}(e,t)}function qa(e,t={}){return function(e,t){const i=Object(n.useRef)(null),[a,o]=Object(n.useState)(null),c=Object(n.useRef)({map:e,options:t});return Object(n.useEffect)((()=>{let e,t=!1;async function a(){const{map:a,options:n}=c.current;e=await Ua(a,n),t||(e.container=i.current,o(e))}return a(),function(){t=!0,function(e){e&&(e=e.container=null)}(e)}}),[]),[i,a]}(e,t)}function Qa(e,t,i){!function(e,t,i){Object(n.useEffect)((()=>{if(!e)return;const a=t.map((t=>e.watch(t,i)));return function(){a.forEach((e=>{e.remove()}))}}),[e,t,i])}(e,[t],i)}F.default.div`
+  height: 100%;
+  width: 100%;
+
+  ${e=>!e.hasMapView&&F.css`
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+    `};
+`;const Xa=F.default.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${e=>e.theme.palette.blue};
+`;var Ka=i(418),en=i.n(Ka);var tn=()=>Object(a.jsx)(Xa,{children:Object(a.jsx)(en.a,{color:"#095796",sizeRatio:1.2})});var an=()=>{const{mapView:e,updateMapView:t,setLocateWidget:i,mapLoaded:o,setMapLoaded:c,focalPoint:l,updateFocalPoint:d,vaccineTypeFilter:h,updateSelectedFacility:p,setPopupDirectionsRequest:u}=Object(n.useContext)(tt),b=new URLSearchParams(Object(s.f)().search).get("webmap")||m[window.app_env]||m.prod,[j,f]=qa(b,{view:{constraints:{rotationEnabled:!1}}});Qa(f,"ready",(async()=>{try{const{locateWidget:e}=await async function({view:e,setMapLoaded:t,vaccineTypeFilter:i,updateSelectedFacility:n,setPopupDirectionsRequest:o,focalPoint:c}){e.popup.defaultPopupTemplateEnabled=!1,e.map.load(),await y.f(e.map,"loadStatus","loaded");const l=new v.a({view:e,useHeadingEnabled:!1});e.ui.move("zoom","top-right"),e.ui.add(l,{position:"top-right"});const s=Qe(e.map),d=new S.a({creator:function(t){return new Promise(((l,s)=>{Be({mapView:e,facilityId:t.graphic.attributes.OBJECTID}).then((e=>{const t=Object(a.jsxs)(a.Fragment,{children:[Object(a.jsx)(me,{facility:e,isPopup:!0,onFacilitySelected:()=>n(e),vaccineTypeFilter:i}),Object(a.jsx)(We,{selectedFacility:e,focalPoint:c,setPopupDirectionsRequest:o,hideShadow:!0,isPopup:!0})]}),s=document.createElement("div");s.id="facility_popup",r.a.render(t,s),l(s)}),(e=>{console.error(e),s(e)}))}))}}),h=new P.a({content:[d],overwriteActions:!0,actions:[],actionsMenuEnabled:!1,visibleElements:{closeButton:!1,featureNavigation:!1}});s.watch("loadStatus",(e=>{"loaded"===e&&setTimeout((()=>{t(!0)}),3e3)})),s.popupTemplate=h,e.popup.watch("visible",(function(e,t,i,a){const n=document.getElementById("mapToListToggle");n&&(n.style.visibility=e?"hidden":"visible")}));const p=new k.a({id:He});return e.map.layers.add(p),{locateWidget:l}}({view:f,setMapLoaded:c,updateSelectedFacility:p,vaccineTypeFilter:h,setPopupDirectionsRequest:u,focalPoint:l});e.on("locate",(e=>{d({position:e.position})})),t(f),i(e)}catch(e){console.error(e)}}));let g=Object(s.h)("/locations");var x;return x=g,[".esri-view-surface",'div[title="Zoom in"]','div[title="Zoom out"]',".esri-attribution__sources",".esri-attribution__link",".esri-locate"].forEach((e=>{document.querySelector(e)&&document.querySelector(e).setAttribute("tabIndex",x?"0":"-1")})),Object(a.jsxs)(a.Fragment,{children:[Object(a.jsx)("a",{className:"skip-link",href:"#skip-link-map",children:"Skip over map"}),o?null:Object(a.jsx)(tn,{}),Object(a.jsx)("div",{className:"map-container",ref:j,"data-testid":"Map"}),Object(a.jsx)("span",{id:"skip-link-map"}),Object(a.jsx)(s.a,{path:"/locations",children:Object(a.jsx)(qi,{id:"mapToListToggle","aria-hidden":!!g})})]})};const nn=e=>{let t=Object(s.h)("/locations"),i=Object(s.h)({path:["/locations","/"],exact:!0});const{mapView:o,filterVisible:c,vaccineTypeFilter:r}=Object(n.useContext)(tt),{search:l}=Object(s.f)(),d=new URLSearchParams(l).get("mView");return Object(a.jsxs)(Fi,{hide:!t,children:[Object(a.jsx)(Yi,{}),Object(a.jsx)(s.a,{path:"/locations",component:_i}),Object(a.jsx)(Ti,{showFilter:i,children:Object(a.jsx)(ui,{})}),"COVID"===r.VaccineType?Object(a.jsx)(ei,{}):Object(a.jsx)(ri,{}),Object(a.jsxs)($i,{"aria-label":"Locations View",filterVisible:c,"aria-hidden":!t,children:[Object(a.jsxs)(Vi,{mView:d,filterVisible:c,"aria-label":"Vaccination locations",children:[Object(a.jsx)(s.a,{exact:!0,path:"/locations",component:Xi}),Object(a.jsx)(s.a,{exact:!0,path:"/locations/:id",component:Ba}),c&&Object(a.jsx)(ua,{})]}),Object(a.jsx)(zi,{role:"application",hasMapView:!!o,mView:d,"aria-hidden":!t,"aria-label":"Map View",children:Object(a.jsx)(an,{})})]})]})};nn.defaultProps={};var on=nn,cn=i(419);var rn=()=>Object(a.jsxs)(cn.a,{children:[Object(a.jsx)("title",{children:"NYC COVID-19 and Flu Vaccine Finder"}),Object(a.jsx)("meta",{name:"viewport",content:"width=device-width, initial-scale=1"}),Object(a.jsx)("meta",{name:"description",content:"Find a vaccine near you."}),Object(a.jsx)("meta",{property:"og:type",content:"website"}),Object(a.jsx)("meta",{property:"og:title",content:"NYC COVID-19 and Flu Vaccine Finder"}),Object(a.jsx)("meta",{property:"og:description",content:"Find a vaccine near you."}),Object(a.jsx)("meta",{property:"og:image",content:"http://www1.nyc.gov/assets/home/images/content/home/program-nyc-darkblue.png"}),Object(a.jsx)("meta",{name:"twitter:card",content:"summary"}),Object(a.jsx)("meta",{name:"twitter:title",content:"NYC COVID-19 and Flu Vaccine Finder"}),Object(a.jsx)("meta",{name:"twitter:description",content:"Find a vaccine near you."}),Object(a.jsx)("meta",{name:"twitter:image",content:"http://www1.nyc.gov/assets/home/images/content/home/program-nyc-darkblue.png"}),Object(a.jsx)("meta",{name:"twitter:image:alt",content:"New York City Logo"})]}),ln=i(320);const sn=F.default.div`
+  ${ln.CalciteA} {
+    color: ${e=>e.theme.palette.colors.primary};
+    text-decoration: underline;
+  }
+`,dn=Object(F.default)(sa)`
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  z-index: 5;
+
+  @media screen and (min-width: 650px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 0;
+    bottom: auto;
+    box-shadow: none;
+  }
+
+  ${e=>e.isLocationRoute&&F.css`
+      display: none;
+    `};
+`,hn=F.default.a`
+  display: none;
+  @media screen and (min-width: 650px) {
+    display: block;
+    justify-self: center;
+  }
+`,pn=F.default.img`
+  height: ${e=>Object($.unitCalc)(e.theme.baseline,2,"*")};
+  display: none;
+  @media screen and (min-width: 650px) {
+    display: block;
+    justify-self: center;
+  }
+`,un=F.default.div`
+  #google_translate_element {
+    display: block;
+  }
+`,bn=()=>{const e=Object(n.useRef)(null);return Object(n.useEffect)((()=>{e&&e.current.appendChild(document.getElementById("google_translate_element"))}),[e]),Object(a.jsx)(un,{"aria-label":"Google Translate Widget",ref:e,role:"navigation"})};bn.defaultProps={};var mn=bn,jn=i(421),fn=i.n(jn);var gn=()=>{const e={to:"/faq"};return Object(a.jsx)(ge,{as:l.b,...e,icon:Object(a.jsx)(fn.a,{size:16}),iconPosition:"before",style:{justifySelf:"right"},className:"notranslate",content:"notranslate",children:"FAQ"})};i(529);var xn=function(){let e=Object(s.h)("/locations"),t=Object(s.e)();return Object(n.useEffect)((()=>{if(window.location.hostname.match("vaccinefinder.nyc.gov"))return t.listen((e=>{const t=e.pathname,i=e.search.replace("?","");"function"===typeof dcsMultiTrack&&window.dcsMultiTrack("DCS.dcsuri",t,"DCS.dcsqry",i)})),()=>{console.log("cleanup")}}),[]),Object(a.jsxs)(it,{children:[Object(a.jsx)(rn,{}),Object(a.jsxs)(sn,{className:"App",children:[Object(a.jsx)(s.a,{exact:!0,path:"/",component:ji}),Object(a.jsx)(s.a,{exact:!0,path:"/faq",component:ki}),Object(a.jsx)("footer",{children:Object(a.jsxs)(dn,{isLocationRoute:e,children:[Object(a.jsx)(mn,{}),Object(a.jsx)(hn,{to:"/",as:l.b,children:Object(a.jsx)(pn,{src:bi,alt:"NYC Logo"})}),Object(a.jsx)(s.a,{exact:!0,path:"/",component:gn})]})}),Object(a.jsx)(on,{})]})]})},yn=i(422);var vn=F.createGlobalStyle`
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    @keyframes fadeInAndDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  ${we.StyledSideNav} {
+    border-radius: 0;
+  }
+
+  select.goog-te-combo {
+    font-size: 16px;
+  }
+
+  .esri-popup__main-container {
+    width: inherit !important;
+    max-width: 24rem;
+  }
+
+  .esri-popup__content {
+    margin-inline: 0;
+  }
+
+  .esri-feature__content-element {
+    padding: 0 0.755rem;
+  }
+
+  .esri-popup__inline-actions-container {
+    display: inline-block;
+    line-height: 2rem;
+    
+    [title="Schedule appointment"],
+    [title="Call for appointment"] {
+      .esri-popup__action-text {
+        display: flex;
+      }
+    }
+
+    [title="Zoom to"] {
+      display: none;
+    }
+
+    .get-directions, .share-link {
+      margin: 0 !important;
+    }
+
+    .get-directions + span,
+    .share-link + span {
+      display: none;
+    }
+
+    & > .esri-popup__button {
+      height: 30px;
+      margin: 0 3px;
+
+      &:first-child {
+        margin-inline-start: 7px;
+      }
+    }
+
+    .esri-popup__actions-menu-button {
+      display: none;
+    }
+  }
+
+  .esri-popup__inline-actions-container > .esri-popup__action {
+    background: ${e=>e.theme.palette.blue};
+    color: ${e=>e.theme.palette.white};
+    border-radius: 20px;
+    padding: 0.31rem 1rem;
+    display: inline-flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    max-width: none !important;
+
+    &:hover {
+      background: ${e=>e.theme.palette.darkBlue};
+      color: ${e=>e.theme.palette.white};
+    }
+
+    .esri-popup__action-text {
+      line-height: 1.25rem;
+      margin: 0 .25rem;
+      font-size: 0.9375rem;
+    }
+  }
+
+  .esri-popup__header {
+    display: none !important;
+  }
+  .esri-attribution {
+    background: #fff !important;
+  }
+
+  .goog-te-gadget {
+    background: #ffffff !important;
+  }
+
+  .skip-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+
+`,On=i(60);i(530);let wn;(()=>{const e=b[window.location.hostname];window.app_env=e})(),wn=yn.a,On.a.assetsPath=`${wn}/assets`;let Cn=.01*window.innerHeight;document.documentElement.style.setProperty("--vh",`${Cn}px`),window.addEventListener("resize",(()=>{let e=.01*window.innerHeight;document.documentElement.style.setProperty("--vh",`${e}px`)})),r.a.render(Object(a.jsx)(o.a.StrictMode,{children:Object(a.jsxs)(h.a,{theme:V,children:[Object(a.jsx)(vn,{}),Object(a.jsx)(l.a,{basename:wn,children:Object(a.jsx)(s.a,{path:"/",component:xn})})]})}),document.getElementById("root")),p()},68:function(e){e.exports=JSON.parse('{"facility":"Facility","walkIn":"Walk-ins welcome","immigrationCheck":"No immigration check","free":"Free","covid19":"COVID-19","COVID":"COVID-19","Flu":"Flu","pfizer":"Pfizer","moderna":"Moderna","COVID Vaccine Pfizer":"Pfizer (12+)","COVID Vaccine Pfizer-5-11 Years":"Pfizer (5-11)","COVID Vaccine Moderna":"Moderna (18+)","COVID Vaccine Johnson":"Johnson & Johnson (18+)","flu":"Flu (Nasal)","flu17":"Flu (17 and younger)","flu18":"Flu (18 and older)","flu65":"Flu Shot (65+)","medicaid":"Medicaid","medicare":"Medicare","private":"Private Insurance","cash":"Low or No Cost","ages18":"18 years and older","ages17":"17 years and younger","OBJECTID":1,"FacilityName":"Facility Name","appointmentRequired":"Check for appointments","Intake_ApptPreferred":"Appointments are encouraged; limited walk-ins accepted","ServiceCategory":"Vaccines","ServiceType_Pfizer":"Pfizer (12+)","ServiceType_Moderna":"Moderna (18+)","ServiceType_JohnsonAndJohnson":"Johnson & Johnson (18+)","Covid_3":"Covid 3","Covid_4":"Covid 4","Covid_5":"Covid 5","Flu_1":"Flu 1","Flu_2":"Flu 2","Flu_3":"Flu 3","Flu_4":"Flu 4","Flu_5":"Flu 5","Address":"Address","Borough":"Borough","Zipcode":"Zip code","Phone":"Phone","Monday":"Monday","Tuesday":"Tuesday","Wednesday":"Wednesday","Thursday":"Thursday","Friday":"Friday","Saturday":"Saturday","Sunday":"Sunday","closed":"Closed","homeNotice":null,"AgesServed":"Site only serves those age 50 and older and/or","AgesServed_RedefineCategories":"Ages Served","Payment_Medicaid":"Medicaid","Payment_Medicare":"Medicare","Payment_PrivateInsurance":"Private Insurance","Paymet_Uninsured":"Uninsured","Payment_Cash":"Cash","SupplyLevel":"","Community Health Center/Clinic":"Community Health Center/Clinic","Hospital-Based Health Center/Clinic":"Hospital-Based Health Center/Clinic","Pharmacy":"Pharmacy","Primary Care":"Primary Care","Urgent Care":"Urgent Care"}')}},[[531,34,35]]]);
+//# sourceMappingURL=main.a7a9e3c1.chunk.js.map
